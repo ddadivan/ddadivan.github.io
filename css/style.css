@@ -508,10 +508,10 @@ input:focus{
 	margin-bottom:10px;
 	position:relative;
 }
-input[type="checkbox"]{
+input[type="radio"]{
 	display:none;
 }
-input[type="checkbox"]:checked + .radio-box:after{
+input[type="radio"]:checked + .radio-box:after{
 	background:#0f0;
 	left:20px;
 }
