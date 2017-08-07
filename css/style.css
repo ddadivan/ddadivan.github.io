@@ -556,8 +556,26 @@ input[type="radio"]:checked + .radio-box:after{
 }
 .number .quantity-nav{
 	position:absolute;
-	top:-2px;
-	left:95%;
+	top:1px;
+	bottom:1px;
+	right:1px;
+	width:20px;
+	text-align:center;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.number .quantity-button{
+	font-size:15px;
+	line-height:1;
+	font-weight:700;
+	border-left:1px solid #000;
+	cursor:pointer;
+}
+.number .quantity-up{
+	border-bottom:1px solid #000;
+	line-height:16px;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{
