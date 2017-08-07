@@ -588,11 +588,39 @@ input[type=number]{
   -moz-appearance:textfield;
 }
 .check-wrap{
-	padding:5px 10px;
-	text-align:center;
+	position:relative;
+	padding:10px 10px;
 }
 .check-wrap label{
-	font-size:16px;
+	padding-left:20px;
 }
+.check-wrap input[type="checkbox"]{
+	display:none;
+}
+.check-wrap:before,
+.check-wrap:after{
+	content:"";
+	display:block;
+	position:absolute;
+}
+.check-wrap:before{
+	content:"";
+	top:10px;
+	left:0;
+	width:20px;
+	height:20px;
+	border:1px solid #000;
+	box-sizing:border-box;
+	background:#D3D3D3;
+}
+.check-wrap:after{
+	content:"";
+	width:10px;
+	height:10px;
+	top: 15px;
+    left: 5px;
+	background:#000;
+}
+
 /* end sign-up form*/
 
