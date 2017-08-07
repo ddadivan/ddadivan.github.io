@@ -527,6 +527,7 @@ input[type="radio"]:checked + .radio-box:after{
 	display:block;
 	left:0;
 	top:6px;
+	cursor:pointer;
 	-moz-transition:all 0.2s ease-out;
     -o-transition:all 0.2s ease-out;
     -webkit-transition:all 0.2s ease-out;
@@ -551,7 +552,7 @@ input[type="radio"]:checked + .radio-box:after{
 	background:#f00;
 }
 .number{
-
+	
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{
