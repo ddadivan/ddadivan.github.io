@@ -597,13 +597,13 @@ input[type=number]{
 .check-wrap input[type="checkbox"]{
 	display:none;
 }
-.check-wrap:before,
-.check-wrap:after{
+.checkbox:before,
+.checkbox:after{
 	content:"";
 	display:block;
 	position:absolute;
 }
-.check-wrap:before{
+.checkbox:before{
 	content:"";
 	top:10px;
 	left:0;
@@ -613,14 +613,19 @@ input[type=number]{
 	box-sizing:border-box;
 	background:#D3D3D3;
 }
-.check-wrap:after{
+.checkbox:after{
 	content:"";
 	width:10px;
 	height:10px;
-	top: 15px;
-    left: 5px;
+	top:15px;
+    left:5px;
 	background:#000;
 }
-
+.check-wrap input[type="checkbox"]:checked + .checkbox:after{
+	background:#fff;
+}
+.check-wrap input[type="checkbox"]:checked + .checkbox:before{
+	background:#18E4E6;
+}
 /* end sign-up form*/
 
