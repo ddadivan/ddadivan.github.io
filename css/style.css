@@ -593,7 +593,7 @@ input[type=number]{
 }
 .check-wrap label{
 	display:block;
-	padding:10px 30px;
+	padding:5px 10px 5px 40px;
 	vertical-align:top;
 }
 .check-wrap label span{
@@ -629,10 +629,15 @@ input[type=number]{
 .check-wrap input[type="checkbox"]:checked + .checkbox:after{
 	background:#0f0;
 }*/
+.check-wrap label:after,
+.check-wrap label:before{
+	content:"";
+	position:absolute;
+}
 .check-wrap label span:before{
 	content:"";
 	position:absolute;
-	top:10px;
+	top:5px;
 	left:0;
 	width:20px;
 	height:20px;
@@ -641,26 +646,25 @@ input[type=number]{
 }
 .check-wrap label:before{
 	content:"";
-	position:absolute;
 	width: 8px;
     height: 2px;
-    top: 20px;
-    left:2px;
+    top:18px;
+    left:3px;
     transform: rotate(50deg);
 	background:transparent;
 }
 .check-wrap label:after{
 	content:"";
-	position: absolute;
     width: 12px;
     height: 2px;
-    top: 16px;
-    left:4px;
+    top: 14px;
+    left:5px;
     transform: rotate(-77deg);
     background:transparent;
 }
-.check-wrap input[type="checkbox"]:checked + .check-wrap label:after{
-	background:#0f0;
+.check-wrap input[type="checkbox"]:checked + label:after,
+.check-wrap input[type="checkbox"]:checked + label:before{
+	background:#000;
 }
 /* end sign-up form*/
 
