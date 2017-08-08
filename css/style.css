@@ -532,6 +532,11 @@ input[type="radio"]:checked + .radio-box:after{
     -o-transition:all 0.2s ease-out;
     -webkit-transition:all 0.2s ease-out;
     transition:all 0.2s ease-out;
+    cursor:pointer;
+	-webkit-user-select: none;    
+	-moz-user-select: none;    
+	-ms-user-select: none;    
+	user-select: none;
 }
 .radio-box:before{
 	width:34px;
@@ -634,6 +639,10 @@ input[type=number]{
 	content:"";
 	position:absolute;
 	cursor:pointer;
+	-webkit-user-select: none;    
+	-moz-user-select: none;    
+	-ms-user-select: none;    
+	user-select: none;
 }
 .check-wrap label span:before{
 	content:"";
@@ -645,6 +654,10 @@ input[type=number]{
 	border:2px solid #999;
 	background:#fff;
 	cursor:pointer;
+	-webkit-user-select: none;    
+	-moz-user-select: none;    
+	-ms-user-select: none;    
+	user-select: none;
 }
 .check-wrap label:before{
 	content:"";
