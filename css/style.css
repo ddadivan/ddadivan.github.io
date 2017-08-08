@@ -597,12 +597,12 @@ input[type=number]{
 	vertical-align:top;
 }
 .check-wrap label span{
-	display:inline-block;
+	display:block;
 }
 .check-wrap input[type="checkbox"]{
 	display:none;
 }
-.checkbox:before,
+/*.checkbox:before,
 .checkbox:after{
 	content:"";
 	display:block;
@@ -614,9 +614,9 @@ input[type=number]{
 	left:0;
 	width:20px;
 	height:20px;
-	border:1px solid #000;
+	border:2px solid #999;
 	box-sizing:border-box;
-	background:#D3D3D3;
+	background:#fff;
 }
 .checkbox:after{
 	content:"";
@@ -624,13 +624,20 @@ input[type=number]{
 	height:10px;
 	top:15px;
     left:5px;
-	background:#000;
+	background:transparent;
 }
 .check-wrap input[type="checkbox"]:checked + .checkbox:after{
+	background:#0f0;
+}*/
+.check-wrap label span:before{
+	content:"";
+	top:10px;
+	left:0;
+	width:20px;
+	height:20px;
+	border:2px solid #999;
+	box-sizing:border-box;
 	background:#fff;
-}
-.check-wrap input[type="checkbox"]:checked + .checkbox:before{
-	background:#18E4E6;
 }
 /* end sign-up form*/
 
