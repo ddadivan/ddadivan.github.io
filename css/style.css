@@ -592,6 +592,7 @@ input[type=number]{
 	margin-bottom:10px;
 }
 .check-wrap label{
+	display:block;
 	padding:10px 30px;
 	vertical-align:top;
 }
@@ -609,7 +610,7 @@ input[type=number]{
 }
 .checkbox:before{
 	content:"";
-	top:0;
+	top:10px;
 	left:0;
 	width:20px;
 	height:20px;
@@ -621,7 +622,7 @@ input[type=number]{
 	content:"";
 	width:10px;
 	height:10px;
-	top:5px;
+	top:15px;
     left:5px;
 	background:#000;
 }
