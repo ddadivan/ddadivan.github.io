@@ -589,10 +589,14 @@ input[type=number]{
 }
 .check-wrap{
 	position:relative;
-	padding:10px 10px;
+	margin-bottom:10px;
 }
 .check-wrap label{
-	padding-left:20px;
+	padding:10px 30px;
+	vertical-align:top;
+}
+.check-wrap label span{
+	display:inline-block;
 }
 .check-wrap input[type="checkbox"]{
 	display:none;
@@ -605,7 +609,7 @@ input[type=number]{
 }
 .checkbox:before{
 	content:"";
-	top:10px;
+	top:0;
 	left:0;
 	width:20px;
 	height:20px;
@@ -617,7 +621,7 @@ input[type=number]{
 	content:"";
 	width:10px;
 	height:10px;
-	top:15px;
+	top:5px;
     left:5px;
 	background:#000;
 }
