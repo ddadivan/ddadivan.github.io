@@ -631,13 +631,36 @@ input[type=number]{
 }*/
 .check-wrap label span:before{
 	content:"";
+	position:absolute;
 	top:10px;
 	left:0;
 	width:20px;
 	height:20px;
 	border:2px solid #999;
-	box-sizing:border-box;
 	background:#fff;
+}
+.check-wrap label:before{
+	content:"";
+	position:absolute;
+	width: 8px;
+    height: 2px;
+    top: 20px;
+    left:2px;
+    transform: rotate(50deg);
+	background:transparent;
+}
+.check-wrap label:after{
+	content:"";
+	position: absolute;
+    width: 12px;
+    height: 2px;
+    top: 16px;
+    left:4px;
+    transform: rotate(-77deg);
+    background:transparent;
+}
+.check-wrap input[type="checkbox"]:checked + .check-wrap label:after{
+	background:#0f0;
 }
 /* end sign-up form*/
 
