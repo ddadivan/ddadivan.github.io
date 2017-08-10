@@ -31,3 +31,13 @@ body{
 	right:0;
 	z-index:2;
 }
+.content{
+	width:1045px;
+	padding:0px 18px 0px;
+}
+/*header*/
+.logo a{
+	display:block;
+}
+
+/*end header*/
