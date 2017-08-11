@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('../fonts/beast-vs-spreadtall.otf');
+@import url('../fonts/Trebuchet MS Bold.otf');
+@import url('../fonts/Trebuchet MS.otf');
+@import url('../fonts/TahomaRegular.otf');
+@import url('../fonts/Tahoma Bold.otf');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,13 +38,16 @@ body{
 	width:100%;
 	left:0;
 	right:0;
-	z-index:2;
+	z-index:-2;
 }
 .top-bg{
 	top:0;
 }
 .bottom-bg{
 	bottom:0;
+}
+.top-bg img,.bottom-bg img{
+	display:block;
 }
 *, *:after, *:before{
 	-webkit-box-sizing:border-box;
@@ -62,6 +72,7 @@ body{
 }
 /*header*/
 .header{
+	margin:0 auto;
 	padding:29px 0px;
 }
 .logo-box{
@@ -73,8 +84,10 @@ body{
 }
 .logo-box .baner{
 	position:absolute;
+	display:block;
 	top: -10px;
     left: 0;
+    z-index:3;
 }
 .logo-box .logo{
 	margin-top:43px;
@@ -82,14 +95,17 @@ body{
 .logo-box .slogan{
 	margin-left:15px;
 	vertical-align:top;
+	font-family:'beast-vs-spreadtall', sans-serif;
 	font-size:24pt;
+	text-shadow: 0px 3px 0px rgba(255, 255, 255, 1);
 	color:#5c5c5c;
 }
 .top-contact{
 	padding:5px 25px 32px;
 }
 .top-contact .title{
-	vertical-align:top;
+	display:inline-block;
+	font-family:'Trebuchet MS Bold',sans-serif;
 	color:#626262;
 }
 .top-contact li{
@@ -99,9 +115,13 @@ body{
 	display:block;
 	text-decoration:none;
 	text-align:center;
+	font-family:'beast-vs-spreadtall', sans-serif;
 	color:#ff8f00;
 }
 .top-phones i{
 	color:#8b8b8b;
+}
+.top-links{
+
 }
 /*end header*/
