@@ -44,14 +44,64 @@ body{
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 }
+.clear:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
 .content{
 	width:1045px;
 	margin:0 auto;
 	padding:0px 18px 0px;
 }
 /*header*/
+.header{
+	padding:29px 0px;
+}
+.logo-box{
+	position:relative;
+}
 .logo-box a{
 	display:block;
+	text-decoration:none;
 }
-
+.logo-box .baner{
+	position:absolute;
+	top: -10px;
+    left: 0;
+}
+.logo-box .logo{
+	margin-top:43px;
+}
+.logo-box .slogan{
+	margin-left:15px;
+	vertical-align:top;
+	font-size:24pt;
+	color:#5c5c5c;
+}
+.top-contact{
+	padding:5px 25px 32px;
+}
+.top-contact .title{
+	vertical-align:top;
+	color:#626262;
+}
+.top-contact li{
+	list-style:none;
+}
+.top-phones a{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	color:#ff8f00;
+}
+.top-phones i{
+	color:#8b8b8b;
+}
 /*end header*/
