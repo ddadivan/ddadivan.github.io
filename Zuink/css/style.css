@@ -48,6 +48,7 @@ body{
 }
 .top-bg img,.bottom-bg img{
 	display:block;
+	width:100%;
 }
 *, *:after, *:before{
 	-webkit-box-sizing:border-box;
@@ -93,19 +94,22 @@ body{
 	margin-top:43px;
 }
 .logo-box .slogan{
-	margin-left:15px;
+	margin-left:5px;
 	vertical-align:top;
 	font-family:'beast-vs-spreadtall', sans-serif;
 	font-size:24pt;
+	letter-spacing:1px;
 	text-shadow: 0px 3px 0px rgba(255, 255, 255, 1);
 	color:#5c5c5c;
 }
 .top-contact{
-	padding:5px 25px 32px;
+	padding:5px 10px 32px;
 }
 .top-contact .title{
 	display:inline-block;
 	font-family:'Trebuchet MS Bold',sans-serif;
+	font-size:14pt;
+	text-transform:uppercase;
 	color:#626262;
 }
 .top-contact li{
@@ -116,6 +120,7 @@ body{
 	text-decoration:none;
 	text-align:center;
 	font-family:'beast-vs-spreadtall', sans-serif;
+	font-size:30pt;
 	color:#ff8f00;
 }
 .top-phones i{
