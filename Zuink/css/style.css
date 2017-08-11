@@ -109,6 +109,7 @@ body{
 	display:inline-block;
 	font-family:'Trebuchet MS Bold',sans-serif;
 	font-size:14px;
+	font-weight:700;
 	text-transform:uppercase;
 	color:#626262;
 }
@@ -134,12 +135,33 @@ body{
 	font-size:14px;
 	font-weight:600;
 }
+.top-links .consult{
+	position:relative;
+	display:inline-block;
+}
 .top-links .consult a{
-	padding:9px;
+	padding:5px;
 	text-align:center;
 	background:#36d01e;
 	border:1px solid #fff;
 	border-radius:10px 0px 0px 0px;
+	-moz-border-radius:10px 0px 0px 0px;
+	-webkit-border-radius:10px 0px 0px 0px;
 	box-shadow:0px 0px 0px 2px #36d01e;
+	-moz-box-shadow:0px 0px 0px 2px #36d01e;
+	-webkit-box-shadow:0px 0px 0px 2px #36d01e;
+}
+.top-links .consult a:after{
+	content:"";
+	display:block;
+	position:absolute;
+	right: 1px;
+    top: 17px;
+    width: 28px;
+    height: 18px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 0px 2px #36d01e;
+    transform: skew(6deg,-27deg);
+    background: #36d01e;
 }
 /*end header*/
