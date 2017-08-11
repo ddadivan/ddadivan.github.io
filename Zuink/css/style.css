@@ -129,9 +129,10 @@ body{
 .top-links a{
 	display:block;
 	text-decoration:none;
-	/*color:#fcfcfc;*/
+	color:#fcfcfc;
 	font-family:'Tahoma Bold.otf',sans-serif;
 	font-size:14px;
+	font-weight:600;
 }
 .top-links .consult a{
 	padding:9px;
