@@ -97,7 +97,7 @@ body{
 	margin-left:5px;
 	vertical-align:top;
 	font-family:'beast-vs-spreadtall', sans-serif;
-	font-size:24pt;
+	font-size:24px;
 	letter-spacing:1px;
 	text-shadow: 0px 3px 0px rgba(255, 255, 255, 1);
 	color:#5c5c5c;
@@ -108,7 +108,7 @@ body{
 .top-contact .title{
 	display:inline-block;
 	font-family:'Trebuchet MS Bold',sans-serif;
-	font-size:14pt;
+	font-size:14px;
 	text-transform:uppercase;
 	color:#626262;
 }
@@ -120,13 +120,25 @@ body{
 	text-decoration:none;
 	text-align:center;
 	font-family:'beast-vs-spreadtall', sans-serif;
-	font-size:30pt;
+	font-size:30px;
 	color:#ff8f00;
 }
 .top-phones i{
 	color:#8b8b8b;
 }
-.top-links{
-
+.top-links a{
+	display:block;
+	text-decoration:none;
+	/*color:#fcfcfc;*/
+	font-family:'Tahoma Bold.otf',sans-serif;
+	font-size:14px;
+}
+.top-links .consult a{
+	padding:9px;
+	text-align:center;
+	background:#36d01e;
+	border:1px solid #fff;
+	border-radius:10px 0px 0px 0px;
+	box-shadow:0px 0px 0px 2px #36d01e;
 }
 /*end header*/
