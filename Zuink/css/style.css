@@ -1,10 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('../fonts/beast-vs-spreadtall.otf');
-@import url('../fonts/Trebuchet MS Bold.otf');
-@import url('../fonts/Trebuchet MS.otf');
-@import url('../fonts/TahomaRegular.otf');
-@import url('../fonts/Tahoma Bold.otf');
-
+@font-face {
+	font-family: 'TahomaR';
+	src: url('../fonts/TahomaR.eot');
+	src: local('☺'), url('../fonts/TahomaR.woff') format('woff'), url('../fonts/TahomaR.ttf') format('truetype'), url('../fonts/TahomaR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'beast';
+	src: url('../fonts/beast.eot');
+	src: local('☺'), url('../fonts/beast.woff') format('woff'), url('../fonts/beast.ttf') format('truetype'), url('../fonts/beast.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TahomaB';
+	src: url('../fonts/TahomaB.eot');
+	src: local('☺'), url('../fonts/TahomaB.woff') format('woff'), url('../fonts/TahomaB.ttf') format('truetype'), url('../fonts/TahomaB.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Trebuchet';
+	src: url('../fonts/Trebuchet.eot');
+	src: local('☺'), url('../fonts/Trebuchet.woff') format('woff'), url('../fonts/Trebuchet.ttf') format('truetype'), url('../fonts/Trebuchet.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TrebuchetB';
+	src: url('../fonts/TrebuchetB.eot');
+	src: local('☺'), url('../fonts/TrebuchetB.woff') format('woff'), url('../fonts/TrebuchetB.ttf') format('truetype'), url('../fonts/TrebuchetB.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,27 +57,11 @@ time, mark, audio, video {
 body{
 	position:relative;
 	background:#fbfbfb;
+	font:13px/18px 'TahomaR',Arial,sans-serif;
 }
-.wrapper{
-	overflow:hidden;
-}
-.top-bg, .bottom-bg{
-	position:absolute;
-	display:block;
-	width:100%;
-	left:0;
-	right:0;
-	z-index:-2;
-}
-.top-bg{
-	top:0;
-}
-.bottom-bg{
-	bottom:0;
-}
-.top-bg img,.bottom-bg img{
-	display:block;
-	width:100%;
+p{
+	font:13px/18px 'TahomaR',Arial,sans-serif;
+	color:#414141;
 }
 *, *:after, *:before{
 	-webkit-box-sizing:border-box;
@@ -70,6 +83,27 @@ body{
 	width:1045px;
 	margin:0 auto;
 	padding:0px 18px 0px;
+}
+.wrapper{
+	overflow:hidden;
+}
+.top-bg, .bottom-bg{
+	position:absolute;
+	display:block;
+	width:100%;
+	left:0;
+	right:0;
+	z-index:-2;
+}
+.top-bg{
+	top:0;
+}
+.bottom-bg{
+	bottom:0;
+}
+.top-bg img,.bottom-bg img{
+	display:block;
+	width:100%;
 }
 /*header*/
 .header{
@@ -96,7 +130,7 @@ body{
 .logo-box .slogan{
 	margin-left:5px;
 	vertical-align:top;
-	font-family:'beast-vs-spreadtall', sans-serif;
+	font-family:'beast', sans-serif;
 	font-size:24px;
 	letter-spacing:1px;
 	text-shadow: 0px 3px 0px rgba(255, 255, 255, 1);
@@ -107,7 +141,7 @@ body{
 }
 .top-contact .title{
 	display:inline-block;
-	font-family:'Trebuchet MS Bold',sans-serif;
+	font-family:'TrebuchetB',sans-serif;
 	font-size:14px;
 	font-weight:700;
 	text-transform:uppercase;
@@ -120,7 +154,7 @@ body{
 	display:block;
 	text-decoration:none;
 	text-align:center;
-	font-family:'beast-vs-spreadtall', sans-serif;
+	font-family:'beast', sans-serif;
 	font-size:30px;
 	color:#ff8f00;
 }
@@ -131,7 +165,7 @@ body{
 	display:block;
 	text-decoration:none;
 	color:#fcfcfc;
-	font-family:'Tahoma Bold.otf',sans-serif;
+	font-family:'TahomaB',sans-serif;
 	font-size:14px;
 	font-weight:600;
 }
@@ -164,4 +198,127 @@ body{
     transform: skew(6deg,-27deg);
     background: #36d01e;
 }
+.nav{
+	width:100%;
+	display:table;
+}
+.nav > li{
+	display:table-cell;
+}
+.nav .sub-nav{
+	display:none;
+}
 /*end header*/
+
+
+
+.benefits-list{
+	counter-reset:count;
+}
+.benefits-list li:before{
+	content:counter(count);
+	counter-increment:count;
+}
+
+
+
+
+
+
+
+/*logos-wrap*/
+.logos-wrap{
+	margin-bottom:20px;
+}
+.logos-wrap .content{
+	width:959px;
+}
+.logo-list{
+	display:table;
+	width:100%;
+}
+.logo-list li{
+	display:table-cell;
+	max-width:198px;
+}
+.logo-list a{
+	display:block;
+	text-decoration:none;
+}
+.logo-list .images-wrap{
+	position:relative;
+	width:76px;
+	height:76px;
+	margin:0 auto 6px;
+	background: #eeeeef;
+background: -moz-linear-gradient(top, #eeeeef 0%, #c3c3c3 100%);
+background: -webkit-linear-gradient(top, #eeeeef 0%,#c3c3c3 100%);
+background: linear-gradient(to bottom, #eeeeef 0%,#c3c3c3 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', endColorstr='#c3c3c3',GradientType=0 );
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+}
+.logo-list .images-wrap:before{
+	position:absolute;
+	display:block;
+	content:"";
+	width:66px;
+	height:5px;
+	left:50%;
+	margin-left:-33px;
+	bottom:-3px;
+	z-index:-1;
+	background:url(../images/logo-shadow.png) no-repeat;
+}
+.logo-list .images-wrap:after{
+	position:absolute;
+	display:block;
+	content:"";
+	width:76px;
+	height:76px;
+	background:url(../images/logos.png) no-repeat;
+	top:0;
+	left:0;
+}
+.logo-list .title{
+	position:relative;
+	text-align:center;
+	color:#383838;
+	padding:0 10px;
+}
+.logo-list .title:before,
+.logo-list .title:after{
+	position:absolute;
+	display:block;
+	content:"";
+	top:0;
+	left:0;
+	width:1px;
+	height:18px;
+	background:#c9c9c9;
+}
+.logo-list .title:after{
+	left:auto;
+	right:0;
+}
+.logo-list .led .images-wrap:after{
+	background-position: -263px -5px;
+}
+.logo-list .arrow .images-wrap:after{
+	background-position: -5px -5px;
+}
+.logo-list .brush .images-wrap:after{
+	background-position: -91px -5px;
+}
+.logo-list .globe .images-wrap:after{
+	background-position: -177px -5px;
+}
+.logo-list .ring .images-wrap:after{
+	background-position: -435px -5px;
+}
+.logo-list .question .images-wrap:after{
+	background-position: -349px -5px;
+}
+
+/*end logos-wrap*/
