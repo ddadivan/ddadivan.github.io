@@ -494,10 +494,9 @@ p{
 	border-bottom-left-radius: 7px;
 }
 .offer-footer .price{
-	padding:4px 10px 4px 10px;
+	padding:4px 10px;
 	color:#fff;
 	font-size:24px;
-	font-weight:600;
 	line-height:20px;
 	background:#2eae19;
 	border:1px solid #fff;
@@ -629,14 +628,14 @@ p{
 	color:#1d1c1c;
 }
 .promo-wrap .submit-wrap{
-	padding-left:78px; 
+	padding-top:12px;
 }
 .promo-wrap .submit-wrap .submit-btn{
 	display: block;
     vertical-align: top;
     text-align:center;
-    margin-top: 25px;
-    padding: 4px 15px;
+    margin:0 0 0 auto;
+    padding:3px 15px;
     text-transform: uppercase;
     font: 14px/20px "TahomaB";
     color: #fff;
@@ -1110,13 +1109,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 	font:12px/1 "Trebuchet";
 	color:#5e5454;
 }
+.footer-social{
+	position:relative;
+}
+.footer-social .social-links{
+	position:absolute;
+	display:block;
+	right:-10px;
+	bottom:25px;
+}
+.footer-social .social-links li{
+	list-style:none;
+}
+.footer-social .social-links:after{
+	position:absolute;
+	display:block;
+	content:"";
+	top:-31px;
+    left:28px;
+	width:6px;
+	height:174px;
+	background:url(../images/social-links-band.png) no-repeat;
+}
 /*end footer*/
 .fixed-links.content{
 	position:fixed;
 	display:block;
 	bottom:0;
-	left:0;
-	right:0;
+	right:20px;
 	width:1033px;
 	margin:0 auto;
 }
@@ -1129,7 +1149,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 .fixed-links li{
 	position:relative;
 	display:inline-block;
-	vertical-align:top;
+	vertical-align:bottom;
 }
 .fixed-links li:after{
 	display:block;
@@ -1153,6 +1173,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 	border-radius:7px 7px 0 0;
 }
 .fixed-links li.skype a{
+	padding:6px 12px 6px 47px;
+	font:14px "TahomaR";
 	text-decoration:underline;
 	background:#0099d2;
 }
@@ -1161,13 +1183,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 	left:-167px;
 	width:167px;
 }
+.fixed-links li.skype:before{
+	display:block;
+	position:absolute;
+	content:"";
+    top: 1px;
+    left: 10px;
+    width: 24px;
+    height: 25px;
+    background:url(../images/skype.png) no-repeat;
+}
 .fixed-links li.online a{
+	padding:6px 20px;
+	font:14px "TahomaB";
 	background:#39a825;
 }
 .fixed-links li.online:after{
 	background:#39a825;
 }
 .fixed-links li.request a{
+	padding:6px 26px;
+	font:14px "TahomaB";
 	background:#f79416;
 }
 .fixed-links li.request:after{
