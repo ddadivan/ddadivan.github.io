@@ -297,17 +297,17 @@ body {
   max-width:100%;
   margin:0 auto;
 }
-[type="button"] {
-  width:26px;
-  height:54px;
-}
-.slick-slider .slick-prev:before,
-.slick-slider .slick-prev:after{
+.slick-slider .slick-arrow:before,
+.slick-slider .slick-arrow:after{
   position:absolute;
   display: block;
   content: "";
   opacity:1;
   background:#dedede;
+}
+.logo-list .slick-prev{
+  left:0;
+  z-index:2;
 }
 .slick-slider .slick-prev:before{
   top:2px;
