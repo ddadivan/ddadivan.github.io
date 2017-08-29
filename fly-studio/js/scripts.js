@@ -3,6 +3,7 @@ $(document).ready(function(){
       $( function() {
           $( ".tabs" ).tabs();
       });
+    }
       $( ".tabs" ).on( "tabsactivate", function( event, ui ) {
           $('.port-list').slick('unslick');
           $('.port-list').slick({
@@ -24,7 +25,6 @@ $(document).ready(function(){
             ]
           });
       });
-    }
     if ( $(".port-list").width() > 0 ) {
         $('.port-list').slick({
           dots: false,

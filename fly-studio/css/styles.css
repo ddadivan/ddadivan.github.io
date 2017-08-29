@@ -288,3 +288,31 @@ body {
   line-height:21px;
   margin:0 0 21px;
 }
+/*client-wrap*/
+.client-wrap{
+  padding:65px 0;
+}
+.client-wrap .logo-list .img{
+  display:block;
+  max-width:100%;
+  margin:0 auto;
+}
+.logo-list .slick-prev:before,
+.logo-list .slick-next:before{
+  position:absolute;
+  display: block;
+  content: "";
+  top:-15px;
+  width:26px;
+  height:56px;
+  opacity:1;
+  background: url(../images/left-arrow.png) no-repeat;
+}
+.logo-list .slick-prev:before{
+  left:0;
+}
+.logo-list .slick-next:before{
+  right:0;
+  transform:rotate(180deg);
+}
+/*end client-wrap*/

@@ -1121,6 +1121,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 .footer-social .social-links li{
 	list-style:none;
 }
+.footer-social .social-links a{
+	display:block;
+}
+.footer-social .social-links img{
+	display:block;
+	max-width:100%;
+	margin:0 auto;
+}
 .footer-social .social-links:after{
 	position:absolute;
 	display:block;
