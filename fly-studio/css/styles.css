@@ -38,6 +38,17 @@ body {
   overflow: hidden;
   position: relative;
 }
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.clear:after{
+  display:block;
+  content:"";
+  clear:both;
+}
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -66,6 +77,28 @@ body {
   transform:translateX(-50%);
   background:#81d742;
 }
+/*header*/
+.header{
+  padding:30px 0;
+  background:#222;
+}
+.logo{
+  position:relative;
+}
+.logo img{
+  display:block;
+  max-width:100%;
+  margin:0 auto;
+}
+.slogan{
+  position:absolute;
+  display:block;
+  bottom:0;
+  right:37px;
+  color:#fff;
+  letter-spacing:1px;
+}
+/*end header*/
 /*service*/
 .services-wrap{
   padding:74px 0 34px;
@@ -361,3 +394,7 @@ body {
   transform:rotate(180deg);
 }
 /*end client-wrap*/
+
+/*testimonials*/
+
+/*end testimonials*/
