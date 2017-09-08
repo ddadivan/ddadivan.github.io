@@ -120,6 +120,9 @@ body {
   justify-content:space-between;
   align-items:flex-start;
 }
+.drop-down{
+  position:relative;
+}
 .drop-down a{
   display:block;
   color:#32b4e6;
@@ -130,6 +133,23 @@ body {
 }
 .drop-down ul{
   display:none;
+  position:absolute;
+  padding:5px 10px;
+  top:22px;
+  left:0;
+  right:-20px;
+  background:#32b4e6;
+  border-top:2px solid #fff;
+  z-index:5;
+}
+.drop-down .mail-list{
+  background:#81d742;
+}
+.drop-down:hover ul{
+  display:block;
+}
+.drop-down ul li a{
+  color:#253f49;
 }
 .top-list li{
   margin-right:10px;
