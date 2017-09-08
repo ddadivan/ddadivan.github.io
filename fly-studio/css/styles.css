@@ -77,10 +77,20 @@ body {
   transform:translateX(-50%);
   background:#81d742;
 }
+.flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 /*header*/
 .header{
   padding:30px 0;
   background:#222;
+}
+.header ul{
+  list-style:none;
 }
 .logo{
   position:relative;
@@ -107,24 +117,19 @@ body {
 }
 .header-top{
   margin-bottom:55px;
+  justify-content:space-between;
+  align-items:flex-start;
 }
-.drop-down.tel a,
-.drop-down.mail a{
+.drop-down a{
   display:block;
   color:#32b4e6;
   text-decoration:none;
-}
-.drop-down.mail{
-  margin-left:20px;
 }
 .drop-down.mail a{
   color:#6eb33c;
 }
 .drop-down ul{
   display:none;
-}
-.top-list{
-  margin-left:20px;
 }
 .top-list li{
   margin-right:10px;
