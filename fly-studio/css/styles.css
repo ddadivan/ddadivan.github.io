@@ -125,6 +125,7 @@ body {
 }
 .drop-down a{
   display:block;
+  padding-right:24px;
   color:#32b4e6;
   text-decoration:none;
 }
@@ -137,7 +138,7 @@ body {
   padding:5px 10px;
   top:22px;
   left:0;
-  right:-20px;
+  right:0;
   background:#32b4e6;
   border-top:2px solid #fff;
   z-index:5;
@@ -150,6 +151,37 @@ body {
 }
 .drop-down ul li a{
   color:#253f49;
+}
+.drop-down .arrow{
+  position:relative;
+}
+.drop-down .arrow:after,
+.drop-down .arrow:before{
+  position:absolute;
+  display:block;
+  content:"";
+}
+.drop-down .arrow:after{
+  width:2px;
+  height:8px;
+  top:2px;
+  right:-10px;
+  background:#32b4e6;
+}
+.drop-down .arrow:before{
+  width: 0;
+  height: 0;
+  right: -13px;
+  bottom: 3px;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #32b4e6 transparent transparent transparent;
+}
+.drop-down.mail .arrow:after{
+  background:#81d742;
+}
+.drop-down.mail .arrow:before{
+  border-color:#81d742 transparent transparent transparent;
 }
 .top-list li{
   margin-right:10px;
