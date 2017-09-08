@@ -84,6 +84,11 @@ body {
 }
 .logo{
   position:relative;
+  padding-top: 22px;
+}
+.logo a{
+  display:block;
+  max-width:280px;
 }
 .logo img{
   display:block;
@@ -93,10 +98,57 @@ body {
 .slogan{
   position:absolute;
   display:block;
-  bottom:0;
-  right:37px;
+  top:60px;
+  right:35px;
   color:#fff;
+  font-size:12px;
   letter-spacing:1px;
+  text-transform:uppercase;
+}
+.header-top{
+  margin-bottom:55px;
+}
+.drop-down.tel a,
+.drop-down.mail a{
+  display:block;
+  color:#32b4e6;
+  text-decoration:none;
+}
+.drop-down.mail{
+  margin-left:20px;
+}
+.drop-down.mail a{
+  color:#6eb33c;
+}
+.drop-down ul{
+  display:none;
+}
+.top-list{
+  margin-left:20px;
+}
+.top-list li{
+  margin-right:10px;
+}
+.top-list li a{
+  display:block;
+  color:#797979;
+  text-decoration:none;
+  border-bottom:1px dashed #797979;
+}
+.top-list li a:hover{
+  color:#fff;
+  border-color:#fff;
+}
+.header-bottom .top-nav li{
+  margin-left:20px;
+}
+.header-bottom .top-nav li a{
+  display:block;
+  color:#fff;
+  font-size: 15px;
+  text-decoration:none;
+  text-transform:uppercase;
+  cursor:pointer;
 }
 /*end header*/
 /*service*/
@@ -330,7 +382,7 @@ body {
   max-width:100%;
   margin:0 auto;
 }
-.slick-slider .slick-arrow:before,
+/*.slick-slider .slick-arrow:before,
 .slick-slider .slick-arrow:after{
   position:absolute;
   display: block;
@@ -342,7 +394,7 @@ body {
   left:0;
   z-index:2;
 }
-.slick-slider .slick-prev:before{
+/.slick-slider .slick-prev:before{
   top:2px;
   width:2px;
   height:27px;
@@ -398,3 +450,19 @@ body {
 /*testimonials*/
 
 /*end testimonials*/
+.slick-slide .slick-arrow{
+  position:absolute;
+  display: block;
+  background:#dedede;
+}
+.slick-slider .slick-next,
+.slick-slider .slick-prev{
+  display:block;
+  content:"";
+  position:absolute;
+  left:0;
+  top:25px;
+  width:2px;
+  height:27px;
+  background: url(../images/left-arrow.png) no-repeat;
+}
