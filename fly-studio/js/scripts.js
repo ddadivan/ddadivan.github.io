@@ -52,7 +52,23 @@ $(document).ready(function(){
           infinite: false,
           slidesToShow: 5,
           slidesToScroll: 5,
-          swipeToSlide: true
+          swipeToSlide: true,
+          responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3
+                }
+              },
+              {
+                breakpoint: 468,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              }
+            ]
         });
     }
     if ( $(".testimonials-list").width() > 0 ) {
