@@ -17,6 +17,7 @@ $(document).ready(function(){
           e.preventDefault();
           (this.classList.contains("active") === true) ? this.classList.remove("active")  : this.classList.add("active");
           (this.classList.contains("active") === true) ? $(".layout").toggle('wiggle') : $(".layout").hide('wiggle');
+          (this.classList.contains("active") === true) ? $("body").addClass('no-scroll') : $("body").removeClass('no-scroll');
           (this.classList.contains("active") === true) ? $(".top-nav").toggle('wiggle') : $(".top-nav").hide('wiggle');
         });
       }

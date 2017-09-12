@@ -34,6 +34,10 @@ body, p, ul, ol {
 body {
   min-width: 320px;
 }
+.no-scroll{
+  overflow-y:hidden;
+  overflow:hidden;
+}
 .wrapper {
   overflow: hidden;
   position: relative;
