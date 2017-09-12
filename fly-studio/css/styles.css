@@ -160,6 +160,10 @@ body {
 }
 /*end arrow*/
 /*header*/
+.header .row{
+  -webkit-align-items:center;
+  align-items:center;
+}
 .header{
   padding:30px 0 17px;
   background:#222;
@@ -168,10 +172,10 @@ body {
   list-style:none;
 }
 .logo{
-  position:relative;
   padding-top: 22px;
 }
 .logo a{
+  position:relative;
   display:block;
   max-width:280px;
 }
@@ -702,3 +706,14 @@ body {
   right: 0px;
 }
 /*end footer*/
+@media screen and  (max-width:991px){
+  .logo a{
+    margin:0 auto 10px;
+  }
+  .top-nav{
+    text-align:center;
+  } 
+  .header-top{
+    margin-bottom:10px;
+  }  
+}
