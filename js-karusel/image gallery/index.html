@@ -4,74 +4,147 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>jQuery. Image Replacement</title>
+	<title>jQuery. Image Replacement</title>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    var leftUIEl = $('.carousel-arrow-left'),
+		    	rightUIEl = $('.carousel-arrow-right'),
+		    	elementsList = $('.carousel-list');
+		    var pixelsOffset = 120,
+		    	currentLeftValue = 0,
+		    	elementsCount = elementsList.find('li').length,
+		    	minimumOffset = - ((elementsCount - 5) * pixelsOffset),
+		    	maximumOffset = 0;
+			var firstItem = $(".carousel-list li:first-child").attr("data-name");
 
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-
-	$("h2").append('<em></em>');
-
-	$(".thumbs a").click(function(){
-	
-		var largePath = $(this).attr("href");
-		var largeAlt = $(this).attr("title");
-		
-		$("#largeImg").attr({ src: largePath, alt: largeAlt });
-		
-		$("h2 em").html(" (" + largeAlt + ")"); return false;
-	});
-	
-});
-</script>
-
-<style type="text/css">
-body {
-	margin: 20px auto;
-	padding: 0;
-	width: 580px;
-	font: 75%/120% Arial, Helvetica, sans-serif;
-}
-h2 {
-	font: bold 190%/100% Arial, Helvetica, sans-serif;
-	margin: 0 0 .2em;
-}
-h2 em {
-	font: normal 80%/100% Arial, Helvetica, sans-serif;
-	color: #999999;
-}
-#largeImg {
-	border: solid 1px #ccc;
-	width: 550px;
-	height: 400px;
-	padding: 5px;
-}
-.thumbs img {
-	border: solid 1px #ccc;
-	width: 100px;
-	height: 100px;
-	padding: 4px;
-}
-.thumbs img:hover {
-	border-color: #FF9900;
-}
-</style>
+			$("h2").append('<em></em>').find("em").html(" (" + firstItem + ")");
+			$(".carousel-list li").click(function(){
+				var largePath = $(this).attr("data-url");
+				var largeAlt = $(this).attr("data-name");
+				$("#largeImg").attr({ src: largePath, alt: largeAlt });
+				$("h2 em").html(" (" + largeAlt + ")");
+				return false;
+			});
+		    leftUIEl.click(function() {
+		        if (currentLeftValue != maximumOffset) {
+		            currentLeftValue += 120;
+		            elementsList.animate({ left : currentLeftValue + "px"}, 500);
+		        } else {
+		            currentLeftValue = minimumOffset;
+		            elementsList.animate({ left : currentLeftValue + "px"}, 500);
+		        }
+		    });
+		    rightUIEl.click(function() {
+		        if (currentLeftValue != minimumOffset) {
+		            currentLeftValue -= 120;
+		            elementsList.animate({ left : currentLeftValue + "px"}, 500);
+		        } else {
+		            currentLeftValue = 0;
+		            elementsList.animate({ left : currentLeftValue + "px"}, 500);
+		        }
+		    });
+		});
+	</script>
+	<style type="text/css">
+		*, *:after, *:before{
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			box-sizing:border-box;
+		}
+		body {
+			margin: 20px auto;
+			padding: 0;
+			width: 600px;
+			font: 75%/120% Arial, Helvetica, sans-serif;
+		}
+		h2 {
+			font: bold 190%/100% Arial, Helvetica, sans-serif;
+			margin: 0 0 .2em;
+		}
+		.title em {
+			font: normal 80%/100% Arial, Helvetica, sans-serif;
+			color: #999999;
+		}
+		#largeImg {
+			display:block;
+			border: solid 1px #ccc;
+			width:100%;
+			padding: 5px;
+		}
+		.thumbs{
+			position:relative;
+		}
+		.thumbs img {
+			display:block;
+			border: solid 1px #ccc;
+			max-width: 100%;
+			padding: 4px;
+		}
+		.thumbs img:hover {
+			border-color: #FF9900;
+		}
+		.carousel-hider {
+		    width: 600px;
+		    overflow: hidden;
+		    float: left;
+		}
+		.carousel-list {
+		    list-style:none;
+		    width:10000px;
+		    padding:0px;
+		    position:relative;
+		}
+		.carousel-list:after{
+			display:block;
+			content:'';
+			clear:both;
+		}
+		.carousel-element {
+		    display: block;
+		    max-width:120px;
+		    float: left;
+		}
+		.carousel-arrow-left, .carousel-arrow-right {
+		    position:absolute;
+		    display:block;
+		    top:10px;
+		    border:1px solid grey;
+		    background-color:lightgrey;
+		    padding:5px;
+		    margin-top:35px;
+		    z-index:5;
+		    cursor:pointer;
+		}
+		.carousel-arrow-left{
+			left:-30px;
+		}
+		.carousel-arrow-right{
+			right:-30px;
+		}
+		.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+		    background-color:grey;
+		}
+	</style>
 </head>
-
 <body>
-
-<h2>Illustrations</h2>
-
-<p><img id="largeImg" src="images/img1-lg.jpg" alt="Large image" /></p>
-
-<p class="thumbs">
-	<a href="images/img2-lg.jpg" title="Image 2"><img src="images/img2-lg.jpg" /></a>
-	<a href="images/img3-lg.jpg" title="Image 3"><img src="images/img3-lg.jpg" /></a>
-	<a href="images/img4-lg.jpg" title="Image 4"><img src="images/img4-lg.jpg" /></a>
-	<a href="images/img5-lg.jpg" title="Image 5"><img src="images/img5-lg.jpg" /></a>
-	<a href="images/img6-lg.jpg" title="Image 6"><img src="images/img6-lg.jpg" /></a>
-</p>
-
+	<h2 class="title">Illustrations</h2>
+	<div>
+		<img id="largeImg" src="images/img1-lg.jpg" alt="Large image" />
+	</div>
+	<div class="thumbs">
+		<div class="carousel-arrow-left"><span>Влево</span></div>
+	    <div class="carousel-hider">
+			<ul class="carousel-list">
+			    <li class="carousel-element" data-name="Image 2" data-url="images/img1-lg.jpg"><img src="images/img1-lg.jpg" alt=""></li>
+			    <li class="carousel-element" data-name="Image 2" data-url="images/img2-lg.jpg"><img src="images/img2-lg.jpg" alt=""></li>
+			    <li class="carousel-element" data-name="Image 3" data-url="images/img3-lg.jpg"><img src="images/img3-lg.jpg" alt=""></li>
+			    <li class="carousel-element" data-name="Image 4" data-url="images/img4-lg.jpg"><img src="images/img4-lg.jpg" alt=""></li>
+			    <li class="carousel-element" data-name="Image 5" data-url="images/img5-lg.jpg"><img src="images/img5-lg.jpg" alt=""></li>
+			    <li class="carousel-element" data-name="Image 6" data-url="images/img6-lg.jpg"><img src="images/img6-lg.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="carousel-arrow-right"><span>Вправо</span></div>
+	</div>
 </body>
 </html>
