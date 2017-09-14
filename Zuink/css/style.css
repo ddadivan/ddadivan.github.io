@@ -1217,3 +1217,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 .fixed-links li.request:after{
 	background:#f79416;
 }
+/*pop-app*/
+.pop-app{
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin:-125px 0 0 -220px;
+	padding:50px 100px;
+	-webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    border:3px solid #222;
+	background:#D3D3D3;
+}
+.pop-app .input-wrap{
+	margin-bottom:15px;
+	text-align:right;
+	font:14px/18px "TahomaR";
+	color:#1d1c1c;
+}
+.pop-app input{
+	padding-left:5px;
+}
+.pop-app .submit-wrap{
+	padding-top:12px;
+}
+.pop-app .submit-wrap .submit-btn{
+	display: block;
+    vertical-align: top;
+    text-align:center;
+    margin:0 auto;
+    padding:3px 15px;
+    text-transform: uppercase;
+    font: 14px/20px "TahomaB";
+    color: #fff;
+    background: #e67f10;
+    border: 1px solid #f7d8b8;
+    -webkit-border-radius: 10px 0px 11px 0px;
+    -moz-border-radius: 10px 0px 11px 0px;
+    border-radius: 7px 0px 11px 0px;
+    -webkit-box-shadow: 0px 0px 0px 1px #e67f10;
+    -moz-box-shadow: 0px 0px 0px 1px #e67f10;
+    box-shadow: 0px 0px 0px 1px #e67f10;
+    cursor:pointer;
+}
+/*end pop-app*/
