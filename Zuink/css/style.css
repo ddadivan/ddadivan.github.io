@@ -1218,37 +1218,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 	background:#f79416;
 }
 /*pop-app*/
+.pop-up-layout{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(220, 220, 220, 0.7);
+	z-index:5;
+}
 .pop-app{
 	position:fixed;
 	top:50%;
 	left:50%;
-	margin:-125px 0 0 -220px;
-	padding:50px 100px;
+	margin:-116px 0 0 -170px;
+	padding:40px 100px;
 	-webkit-border-radius:15px;
     -moz-border-radius:15px;
     border-radius:15px;
     border:3px solid #222;
 	background:#D3D3D3;
+	z-index:10;
 }
-.pop-app .input-wrap{
+.pop-app .title{
 	margin-bottom:15px;
-	text-align:right;
-	font:14px/18px "TahomaR";
-	color:#1d1c1c;
+	padding-left:25px;
+	vertical-align:top;
+	text-align:center;
+	font:20px "beast";
+	color:#222;
 }
-.pop-app input{
-	padding-left:5px;
+.pop-app .info{
+	padding-bottom:30px;
+	text-align:left;
+	font-size:15px;
+	color:#222;
 }
-.pop-app .submit-wrap{
-	padding-top:12px;
-}
-.pop-app .submit-wrap .submit-btn{
+.pop-app .btn a{
 	display: block;
     vertical-align: top;
     text-align:center;
     margin:0 auto;
     padding:3px 15px;
     text-transform: uppercase;
+    text-decoration:none;
     font: 14px/20px "TahomaB";
     color: #fff;
     background: #e67f10;
