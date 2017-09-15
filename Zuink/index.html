@@ -254,19 +254,19 @@
 					<div class="promo-box">
 						<img src="images/promo.png" alt="">
 						<div class="promo-form">
-							<div class="promo-form-title">Оставьте заявку на разработку Вашего сайта прямо сейчас!</div>	
-							<form action="javascript:void(0);">
+							<div class="promo-form-title">Оставьте заявку на разработку Вашего сайта прямо сейчас!</div>
+							<form class="promo-form-box" id="form" method="post" action="javascript:void(0);" novalidate>
 								<div class="input-wrap">
 									<label for="offer-name">Имя</label>
-									<input type="text" id="offer-name">
+									<input type="text" id="offer-name" name="name" required>
 								</div>
 								<div class="input-wrap">
 									<label for="offer-mail">E-mail</label>
-									<input type="text" id="offer-mail">
+									<input type="email" id="offer-mail" name="email" required>
 								</div>
 								<div class="input-wrap">
 									<label for="offer-tel">Телефон</label>
-									<input type="text" id="offer-tel">
+									<input type="text" id="offer-tel" name="tel" required>
 								</div>
 								<div class="submit-wrap">
 									<button type="submit" class="submit-btn">Оформить заявку</button>
@@ -506,21 +506,22 @@
 			</li>
 		</ul>
 	</div>
-	<div class="pop-app">
+	<div class="pop-up">
 		<div class="title">Ваши данные</div>
 		<div class="info">
-			<div>Ваше имя</div>
-			<div>Ваша фамилия</div>
-			<div>Ваш телефон</div>
+			<div>Ваше имя - <span id="name"></span></div>
+			<div>Ваша фамилия - <span id="mail"></span></div>
+			<div>Ваш телефон - <span id="tel"></span></div>
 		</div>
 		<div class="btn">
-		 	<a href="#">Подтвердить</a>
+		 	<a href="javascript:void(0);" class="form-pop-up-submit">Подтвердить</a>
 		</div>
 	</div>
 	<div class="pop-up-layout"></div>
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

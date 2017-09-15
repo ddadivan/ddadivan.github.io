@@ -622,10 +622,21 @@ p{
 	color:#2b9900;
 }
 .promo-wrap .input-wrap{
+	position:relative;
 	margin-bottom:15px;
 	text-align:right;
 	font:14px/18px "TahomaR";
 	color:#1d1c1c;
+}
+.promo-wrap label.error{
+	position:absolute;
+	display:block;
+	bottom:-11px;
+	left:0;
+	width:100%;
+	color:#F00;
+	font-size:10px;
+	line-height:1;
 }
 .promo-wrap .submit-wrap{
 	padding-top:12px;
@@ -1217,8 +1228,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 .fixed-links li.request:after{
 	background:#f79416;
 }
-/*pop-app*/
+/*pop-up*/
 .pop-up-layout{
+	display:none;
 	position:fixed;
 	top:0;
 	left:0;
@@ -1227,7 +1239,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 	background:rgba(220, 220, 220, 0.7);
 	z-index:5;
 }
-.pop-app{
+.pop-up-layout.active{
+	display:block;
+}
+.pop-up{
+	display:none;
 	position:fixed;
 	top:50%;
 	left:50%;
@@ -1240,7 +1256,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 	background:#D3D3D3;
 	z-index:10;
 }
-.pop-app .title{
+.pop-up.active{
+	display:block;
+}
+.pop-up .title{
 	margin-bottom:15px;
 	padding-left:25px;
 	vertical-align:top;
@@ -1248,13 +1267,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
 	font:20px "beast";
 	color:#222;
 }
-.pop-app .info{
+.pop-up .info{
 	padding-bottom:30px;
 	text-align:left;
 	font-size:15px;
 	color:#222;
 }
-.pop-app .btn a{
+.pop-up .btn a{
 	display: block;
     vertical-align: top;
     text-align:center;
@@ -1274,4 +1293,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', end
     box-shadow: 0px 0px 0px 1px #e67f10;
     cursor:pointer;
 }
-/*end pop-app*/
+/*end pop-up*/

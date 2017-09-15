@@ -95,13 +95,13 @@ $(document).ready(function(){
       });
   }
   if ( $(".testimonials-list").width() > 0 ) {
-      $('.testimonials-list').slick({
-        dots: false,
-        arrows: true,
-        infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        swipeToSlide: true
-      });
-    }
+    $('.testimonials-list').slick({
+      dots: false,
+      arrows: true,
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipeToSlide: true
+    });
+  }
 });
