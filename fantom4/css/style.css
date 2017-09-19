@@ -60,6 +60,17 @@ time, mark, audio, video {
 	font:30px "Montserrat-Bold", sans-serif;
 	font-weight:bold;
 }
+.clear:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
 /*header*/
 .header{
 	padding:60px 0 100px;
@@ -172,6 +183,7 @@ time, mark, audio, video {
 }
 .view-dron .title{
 	position:relative;
+	text-align:center;
 	color:#000;
 	margin-bottom:67px;
 }
@@ -214,3 +226,123 @@ time, mark, audio, video {
 	text-align:center;
 }
 /*end view-dron*/
+/*advanteges-box*/
+.advanteges-box{
+	padding-bottom:80px;
+	background:#f1f1f1;
+}
+.main{
+	max-width:550px;
+	margin:0 auto;
+}
+.main .img-wrap{
+	margin-bottom:100px;
+}
+.main img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+}
+.main .title{
+	margin-bottom:45px;
+}
+.main .txt{
+	margin-bottom:20px;
+	color:#484848;
+	line-height:10px;
+	letter-spacing:-1px;
+	font:16px/30px "Montserrat-Regular", sans-serif;
+}
+.main .icon-wrap{
+	margin:0 auto;
+	text-align:left;	
+}
+.main .icon-wrap img{
+	margin:0;
+}
+.icon-wrap .block{
+	display:inline-block;
+	vertical-align:top;
+	font-size:0;
+}
+.icon-wrap .block div{
+	margin-bottom:10px;
+}
+.icon-wrap .block + .block{
+	margin-left:50px;
+}
+.icon-wrap .text{
+	text-align:center;
+	color:#000;
+	font:14px/18px "Montserrat-Regular", sans-serif;
+	font-weight:700;
+}
+/*end advanteges-box*/
+/*benefit*/
+.benefit{
+	padding:100px 0 80px;
+	background:#fff;
+}
+.benefit .info{
+	max-width:555px;
+}
+.title{
+	text-align:left;
+	margin-bottom:45px;
+}
+p{
+	margin-bottom:20px;
+	color:#4c4c4c;
+	font:16px/30px "Montserrat-Regular", sans-serif;
+	/*font-weight:600;*/
+}
+.benefit .text{
+	text-align:left;
+}
+/*end benefit*/
+.control{
+	padding:100px 0;
+	background:#e8e8e8;
+}
+.control .info{
+	max-width:720px;
+}
+.control .text{
+	text-align:left;
+}
+/*main-box*/
+.main-box{
+	position:relative;
+	padding:100px 0;
+	background:#0263e7;
+}
+.main-box:before{
+	display:block;
+	position:absolute;
+	content:"";
+	top: 158px;
+	left:50%;
+	margin-left:-807px;
+    width: 1614px;
+    height: 323px;
+	background:url(../images/phantom-bg.png) no-repeat;
+}
+.main-box .title{
+	position:relative;
+	margin-bottom:60px;
+	color:#fff;
+	text-align:center;
+}
+.main-box .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	left:50%;
+	bottom:0;
+	margin-left:-40px;
+	width:80px;
+	height:2px;
+	background:#fff;
+}
+
+/*end main-box*/
