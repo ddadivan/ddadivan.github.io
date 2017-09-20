@@ -313,7 +313,7 @@ p{
 /*main-box*/
 .main-box{
 	position:relative;
-	padding:100px 0;
+	padding:100px 0 20px;
 	background:#0263e7;
 }
 .main-box:before{
@@ -344,5 +344,117 @@ p{
 	height:2px;
 	background:#fff;
 }
-
+.main-box .icon-box{
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	display: flex;
+	max-width:703px;
+	margin:0 auto;
+}
+.main-box .icon{
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	width:200px;
+	margin-bottom:65px;
+}
+.main-box .icon img{
+	display:block;
+	max-width:100%;
+	margin:0 auto 15px;
+}
+.icon-box .caption{
+	color:#fff;
+	font:18px/22px "Montserrat-Bold", sans-serif;
+}
+.icon-box .pros{
+	color:#78a5e5;
+	font:16px/20px "Montserrat-Bold", sans-serif;
+}
 /*end main-box*/
+/*sentence-box*/
+.sentence-box{
+	padding:90px 0;
+	background:#fff;
+}
+.sentence-box .title{
+	position:relative;
+	text-align:center;
+	color:#0263e7;
+}
+.sentence-box .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	left:50%;
+	bottom:0;
+	margin-left:-40px;
+	width:80px;
+	height:2px;
+	background:#0263e7;
+}
+.sentence-box .price{
+	text-align:center;
+	color:#000;
+	font:48px/50px "Montserrat-Bold", sans-serif;
+}
+.form-wrap .form-title{
+	font:24px/26px "Montserrat-Regular", sans-serif;
+	color:#0263e7;
+	margin-bottom:40px;
+}
+.form-wrap input{
+	display:block;
+	margin-bottom:25px;
+	width:250px;
+	font:14px/30px "Montserrat-Regular", sans-serif;
+	border:none;
+	border-bottom:2px solid #80b1f3;
+
+}
+.form-wrap  input[type="text"]::-webkit-input-placeholder { 
+   		color: #111; 
+ }
+ .form-wrap input[type="text"]:-ms-input-placeholder { 
+   		color: #111; 
+ }
+ .form-wrap input[type="text"]::-ms-input-placeholder { 
+   		color: #111; 
+ }
+ .form-wrap input[type="text"]::placeholder { 
+   		color: #111; 
+ } 
+.form-wrap .btn{
+	font:16px/20px "Montserrat-Regular", sans-serif;
+	background:#0263e7;
+	border:none;
+}
+/*end sentence-box*/
+/*video-box*/
+.video-box{
+	padding:80px 5px 100px;
+	background:#e8e8e8;
+}
+.video-box .title{
+	position:relative;
+	text-align:center;
+	color:#000;
+	margin-bottom:90px;
+}
+.video-box .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	left:50%;
+	bottom:0;
+	margin-left:-40px;
+	width:80px;
+	height:2px;
+	background:#000;
+}
+.video-box .video{
+	max-width:640px;
+	margin:0 auto;
+}
+/*end video-box*/
