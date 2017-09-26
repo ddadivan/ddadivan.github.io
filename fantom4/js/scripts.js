@@ -28,7 +28,7 @@ $(document).ready(function(){
     });
   }
   $( ".tabs" ).on( "tabsactivate", function( event, ui ) {
-      $('.foto-box').slick('unslick');
+      $('.gallery-box').slick('unslick');        
       $('.foto-box').slick({
         dots: false,
         arrows: true,
@@ -68,20 +68,20 @@ $(document).ready(function(){
         ]
       });
   }
-  if ( $(".logo-list").width() > 0 ) {
-      $('.logo-list').slick({
+  if ( $(".view-dron").width() > 0 ) {
+      $('.dron-img').slick({
         dots: false,
         arrows: true,
         infinite: false,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         swipeToSlide: true,
         responsive: [
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: 1,
+                slidesToScroll: 1
               }
             },
             {
