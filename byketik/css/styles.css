@@ -76,6 +76,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+body{
+	overflow-x:hidden;
+}
 .content{
 	width:1170px;
 	margin:0 auto;
@@ -462,16 +465,24 @@ time, mark, audio, video {
 .gallery .price-wrap{
 	display:none;
 	position:absolute;
-	top:0px;
-	bottom:0;
-	left:0;
-	right:0;
-	margin:0 auto;
-	padding-top:170px;
+	top:50%;
+	left:50%;
 	color:#000;
 	font:36px/40px "ANTQUAI";
 	font-style:italic;
+	transform: translate(-50%, -50%);
 	background:rgba(255,255,255,0.7);
+}
+.gallery .price-wrap:after{
+	display:block;
+	position:absolute;
+	content:"";
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(255,255,255,0.7);
+	z-index:-1;
 }
 .gallery .price-title{
 	text-align:center;
