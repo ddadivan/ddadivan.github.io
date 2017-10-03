@@ -444,25 +444,8 @@ time, mark, audio, video {
 .gallery-box{
 	margin-bottom:290px;
 }
-.gallery-box .gallery{
-	position: relative;
-}
-.gallery:after,
-.gallery:before{
-	position:absolute;
-	display:block;
-	content:"";
-	width:115px;
-	top:0;
-	bottom:0;
-	background:rgba(0,0,0,0.3);
-	z-index:10;
-}
-.gallery:after{
-	left:0;
-}
-.gallery:before{
-	right:0;
+.gallery-box .content{
+	width:100%;
 }
 .gallery .slick-dots{
 	bottom:-70px
@@ -470,7 +453,7 @@ time, mark, audio, video {
 .gallery-box .gallery img{
 	display:block;
 	margin:0 auto;
-	max-width:100%;
+	width:100%;
 }
 .gallery-box .gallery li{
 	position:relative;
@@ -483,13 +466,12 @@ time, mark, audio, video {
 	bottom:0;
 	left:0;
 	right:0;
-	width:810px;
 	margin:0 auto;
 	padding-top:170px;
 	color:#000;
 	font:36px/40px "ANTQUAI";
 	font-style:italic;
-	background:url(../images/hover.png) no-repeat;
+	background:rgba(255,255,255,0.7);
 }
 .gallery .price-title{
 	text-align:center;
