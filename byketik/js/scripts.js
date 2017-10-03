@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('.gallery').slick({
         centerMode: true,
-        centerPadding: '20%',
+        centerPadding: '10%',
         dots: true,
         arrows: true,
         infinite: true,
