@@ -447,9 +447,9 @@ body{
 .gallery-box{
 	margin-bottom:290px;
 }
-.gallery-box .content{
+/*.gallery-box .content{
 	width:100%;
-}
+}*/
 .gallery .slick-dots{
 	bottom:-70px
 }
