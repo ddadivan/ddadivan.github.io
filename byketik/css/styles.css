@@ -447,9 +447,6 @@ body{
 .gallery-box{
 	margin-bottom:290px;
 }
-/*.gallery-box .content{
-	width:100%;
-}*/
 .gallery .slick-dots{
 	bottom:-70px
 }
@@ -473,20 +470,22 @@ body{
 	transform: translate(-50%, -50%);
 	z-index:5;
 }
-.gallery .slick-current:after{
-	display:block;
-	position:absolute;
-	content:"";
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
+.gallery .slick-slide:after {
+    display: block;    
+    position: absolute;    
+    content: "";    
+    top: 0;    
+    left: 0;    
+    right: 0;    
+    bottom: 0;    
+    background: rgba(0,0,0,0.2);
+}
+.gallery .slick-slide.slick-current:after{
 	background:rgba(255,255,255,0);
 }
-.gallery .slick-current:hover:after{
+.gallery .slick-slide.slick-current:hover:after{
 	background:rgba(255,255,255,0.7);
 }
-
 .gallery .price-title{
 	text-align:center;
 	margin-bottom:50px;
