@@ -240,11 +240,16 @@ body{
 	margin:0 auto;
 	max-width:100%;
 }
-.headbot .down{
+.headbot .down .content{
+	width:1170px;
+	margin:0 auto;
+}
+.headbot .down a{
 	position:absolute;
-	bottom:70px;
 	left:50%;
-	margin-left:-18px;
+	bottom:70px;
+	transform:translateY(-50%);
+	
 }
 /*end header*/
 /*work-box*/
@@ -272,10 +277,10 @@ body{
 	background:#7f7f7f;
 }
 .work.slick-slider .slick-prev{
-  left:-165px;
+  left:-175px;
 }
 .work.slick-slider .slick-next{
-  right:-14px;
+  right:-17px;
 }
 .work.slick-slider .slick-prev:before,
 .work.slick-slider .slick-next:before {
@@ -351,7 +356,7 @@ body{
 	max-width:100%;
 }
 .work .info{
-	width:350px;
+	width:355px;
 	padding:60px;
 }
 .work .work-title{
@@ -473,6 +478,11 @@ body{
 .gallery-box .slick-slide {    
 	margin: 0 15px;
 }
+.gallery.slick-slider .slick-next:before,
+.gallery.slick-slider .slick-next:after{
+	left:auto;
+	right:7px;
+}
 .gallery .slick-slide:after {
     display: block;    
     position: absolute;    
@@ -552,25 +562,28 @@ body{
     transition: none;
 }
 .social-icon .vk{
-	background-position: -114px -10px;
+	background-position: -10px -10px;
 }
 .social-icon .vk:hover{
-	background-position:-62px -62px;
+	background-position:-62px -114px;
 }
 .social-icon .instagram{
-	background-position:-10px -114px;
+	background-position:-114px -10px;
 }
 .social-icon .instagram:hover{
-	background-position:-114px -62px;
+	background-position:-62px -62px;
 }
 .social-icon .facebook{
-	background-position:-62px -10px;
+	background-position:-10px -62px;
 }
 .social-icon .facebook:hover{
-	background-position:-10px -10px;
+	background-position:-62px -10px;
 }
 .social-icon .viber{
-	background-position:-10px -62px;
+	background-position:-114px -62px;
+}
+.social-icon .viber:hover{
+	background-position:-10px -114px;
 }
 /*end contact-wrap*/
 /*about*/
