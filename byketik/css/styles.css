@@ -246,8 +246,8 @@ body{
 }
 .headbot .down a{
 	position:absolute;
-	left:50%;
 	bottom:70px;
+	left:50%;
 	transform:translateY(-50%);
 	
 }
@@ -387,7 +387,7 @@ body{
 /*end work-box*/
 /*section-box*/
 .main{
-	padding:0 16px;
+	padding:0 18px;
 }
 .services{
 	display:flex;
@@ -522,9 +522,10 @@ body{
 	margin-bottom:200px;
 }
 .contact-wrap .contact{
-	padding:70px 0;
+	padding:100px 0;
 	color:#fff;
 	background:url(../images/contactbg.png) no-repeat;
+	background-size:cover;
 }
 .contact-wrap .txt{
 	width:590px;
@@ -680,8 +681,12 @@ body{
 	padding:100px 80px;
 }
 .address-box .address-wrap{
-	padding:150px 0;
+	padding:90px 0 90px;
 	background:url(../images/addressbg.png) no-repeat;
+	background-size:cover;
+}
+.address-box .title{
+	color:#fff;
 }
 .address-box .address{
 	width:350px;
