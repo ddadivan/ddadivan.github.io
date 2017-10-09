@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&subset=latin-ext');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+	width:100%;
+}
+.content{
+	width:1250px;
+	margin:0 auto;
+}
+*{
+	box-sizing:border-box;
+}
+/*header*/
+.header{
+	padding-bottom:142px;
+	background:url(../images/bg.png) no-repeat;
+	background-size:cover;
+}
+.head-box{
+	background:url(../images/nav-bg.png) no-repeat;
+	background-size:cover;
+}
+.header .main{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding-right:40px;
+	margin-bottom:117px;
+}
+.header .logo-box img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+}
+.header .main .block{
+	display:flex;
+	flex-direction:row;
+	justify-content:end;
+}
+.header .main .nav{
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+}
+.header .main .nav li + li{
+	margin-left:20px;
+}
+.header .main .nav a{
+	display:block;
+	padding:47px 16px 35px 14px;
+	font:21px/25px "Gentium Book Basic Bold";
+	color:#fff;
+	text-decoration:none;
+	border-top:3px solid transparent;
+}
+.header .main .nav a:hover{
+	border-color:#cbc9c1; 	
+}
+.header .social{
+	margin-left:5px;
+	padding-top:47px;
+}
+.header .social ul{
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+}
+.header .social li + li{
+	margin-left:16px;
+}
+.header .slogan-box{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.header .slogan-box .text{
+	position:relative;
+	padding-bottom:100px;
+	text-align:center;
+	font:90px/100px "Yeseva";
+	font-weight:700;
+	color:#f2f1f1;
+}
+.header .slogan-box .text:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:43px;
+	left:50%;
+	margin-left:-116px;
+	width:232px;
+	height:43px;
+	background:url(../images/decoration.png) no-repeat;
+}
+.header .slogan-box .btn{
+	text-align:center;
+}
+.header .slogan-box .btn a{
+	display:inline-block;
+	padding:20px 50px;
+	font:18/21px "Lato";
+	color:#fff;
+	text-decoration:none;
+}
+.header .slogan-box .btn .left-btn{
+	margin-right:15px;
+	background:#2b2f33;
+}
+.header .slogan-box .btn .left-btn:hover{
+	background:rgba(255,255,255,0.2);
+	transition:0.7s linear
+}
+.header .slogan-box .btn .right-btn{
+	margin-left:15px;
+	background:rgba(255,255,255,0.2);
+}
+.header .slogan-box .btn .right-btn:hover{
+	background:#000;
+	transition:0.7s linear;
+}
+/*end header*/
+/*about*/
+.about-box{
+	background:url(../images/about-bg.png) no-repeat;
+	background-size:cover;
+}
+.about-block{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	padding:70px 0 43px;
+}
+.about-block .text-box{
+	max-width:430px;
+	padding-top:33px;
+
+}
+.about-block .title{
+	position:relative;
+	text-align:center;
+	font:36px/40px "Yeseva";
+	color:#cc9900;
+	margin-bottom:70px;
+}
+.about-block .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:-36px;
+	left:50%;
+	margin-left:-123px;
+	width:247px;
+	height:24px;
+	background:url(../images/divider.png) no-repeat;
+}
+.about-block img{
+	display:block;
+	max-width:100%;
+	margin:0 auto;
+}
+.about-block .info{
+	margin-bottom:50px;
+	text-align:center;
+	font:16px/25px "Lato";
+}
+.about-block .text-box .img-wrap{
+	position:relative;
+}
+.about-block .text-box .img-wrap img{
+	position:absolute;
+	left:33%;
+}
+/*end about*/
+/*ingred-box*/
+.ingred-box{
+	padding:100px 40px;
+	background:url(../images/ingr-bg.png) no-repeat;
+	background-size:cover;
+}
+.ingred-box .main{
+	width:570px;
+	margin:0 0 0 auto;
+	padding:78px 70px;
+	color:#fff;
+	background:rgba(0,0,0,0.67);
+}
+.ingred-box .main .title{
+	position:relative;
+	margin-bottom:65px;
+	text-align:center;
+	font:36px/41px "Yeseva";
+	font-weight:700;
+}
+.ingred-box .main .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:-39px;
+	left:50%;
+	margin-left:-123px;
+	width:247px;
+	height:24px;
+	background:url(../images/divider-ing.png) no-repeat;
+}
+.ingred-box .main .txt{
+	margin-bottom:70px;
+	padding:0 10px;
+	text-align: center;
+	font:16px/25px "Lato";
+	word-spacing:2px;
+}
+.ingred-box .main img{
+	display:block;
+	max-width:100%;
+	margin:0 auto;
+}
+.ingred-box .main .img-box{
+	padding:0 10px;
+	list-style:none;
+}
+.ingred-box .main .img-box li{
+	display:inline-block;
+}
+.ingred-box .main .img-box li + li{
+	margin-left:30px;
+}
+/*end ingred-box*/
+/*menu-box*/
+.menu-box{
+	padding:100px 0 35px;
+	background:url(../images/pattern-bg.png) no-repeat;
+	background-size:cover;
+}
+.menu-box .menu{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	padding:0 110px;
+}
+.menu-box .menu-list{
+	width:457px;
+}
+.menu-box .menu-list + .menu-list{
+	margin-left:170px;
+}
+.menu-box .menu-list .main{
+	margin-bottom:65px;
+}
+.menu-box .main .title{
+	position:relative;
+	margin-bottom:65px;
+	text-align: center;
+	font:36px/44px "Yeseva";
+	color:#cc9900;
+}
+.menu-box .main .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:-36px;
+	left:50%;
+	margin-left:-123px;
+	width:247px;
+	height:24px;
+	background:url(../images/menu-div.png) no-repeat;
+}
+.menu-box .main .info-box{
+	padding:7px 10px 10px 13px;
+	margin-bottom:25px;
+}
+.menu-box .main .info{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding-bottom:7px;
+	border-bottom:1px solid #e0d1a0;
+}
+.menu-box .main .info-title,
+.menu-box .main .info-price{
+	font:21px/24px "Yeseva";
+	color:#c89f2d;
+}
+.menu-box .main .text-info{
+	padding-top:12px;
+	font:16px/19px "Lato";
+}
+.menu-box .main .info-box.special{
+	position:relative;
+	border:1px solid #e6d9b0;
+	box-sizing:none;
+}
+.menu-box .main .info-box.special:after{
+	position:absolute;
+	display: block;
+	content:"";
+	top:-22px;
+    right:0;
+	width:69px;
+	height:22px;
+	background:url(../images/special.png) no-repeat;	
+}
+/*end menu-box*/
+/*review-box*/
+.review-box{
+	padding:100px 0;
+	background:url(../images/revius-bg.png) no-repeat;
+	background-size:cover;
+}
+.review-box .main{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.review-box .main .textimonial{
+	width:770px;
+	padding:78px 70px 100px;
+	background:url(../images/bg-text.png) no-repeat;
+	background-size:cover;
+}
+.review-box .main .textimonial .title{
+	position:relative;
+	margin-bottom:63px;
+	text-align: center;
+	font:36px/41px "Yeseva";
+	color:#fff;
+
+}
+.review-box .main .textimonial .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:-36px;
+	left:50%;
+	margin-left:-123px;
+	width:247px;
+	height:24px;
+	background:url(../images/div-revius.png) no-repeat;
+}
+.review-box .main .textimonial .text{
+	position:relative;
+	margin-bottom:40px;
+	text-align: center;
+	font:25px/45px "Gentium";
+	color:#dde0df;
+}
+.review-box .main .textimonial .text:After{
+	display:block;
+	position:absolute;
+	content:"";
+	top:0;
+	left:-39px;
+	width:32px;
+	height:25px;
+	background:url(../images/commas.png) no-repeat;
+}
+.review-box .main .textimonial .copy{
+	text-align: center;
+	font:18px/23px "Lato";
+	color:#fff;
+}
+/*end review-box*/
+.reservations-box{
+	padding:100px 40px;
+	background:url(../images/reserv-bg.png) no-repeat;
+	background-size:cover;
+}
+.reservations-box .reserv{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+.reservations-box .reserv .info-box{
+	width:430px;
+	margin-left:70px;
+}
+.reservations-box .reserv .img-wrap{
+	display:flex;
+	flex-direction:row;
+}
+.reservations-box .reserv img{
+	display:block;
+	margin:0 30px 0 auto;
+	max-width:100%;
+}
+.reservations-box .info-box .title-info{
+	position:relative;
+	margin-bottom:65px;
+	text-align: center;
+	font:36px/41px "Yeseva";
+	color:#cc9900;
+}
+.reservations-box .info-box .title-info:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:-36px;
+	left:50%;
+	margin-left:-123px;
+	width:247px;
+	height:24px;
+	background:url(../images/reserv-div.png) no-repeat;
+}
+.reservations-box .info-box .info .txt{
+	text-align: center;
+	font:16px/26px "Lato";
+}
+.reservations-box .info-box .info .block{
+	margin-bottom:15px;
+}
+.reservations-box .info-box .item-box{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.reservations-box .info-box .item{
+	margin-bottom:25px;
+}
+.reservations-box .info-box .item .title{
+	text-align: left;
+	margin-bottom:7px;
+	font:14px/16px "OpenSansBold", sans-serif;
+	font-weight:700;
+	color:#cca73e;
+}
+.reservations-box .info-box .item input{
+	width:200px;
+	padding:8px 10px 8px 15px;
+	border:1px solid #dedfdf;
+}
+.reservations-box .info-box .item input[placeholder]{
+	font:16px/18px "OpenSansItalic", sans-serif;
+	font-style:italic;
+	color:#7c7c7c;
+}
+.reservations-box .info-box .btn-wrap{
+	display:flex;
+	justify-content:center;
+}
+.reservations-box .info-box .btn{
+	padding:10px 65px;
+	font:16px/19px "OpebSans",sans-serif;
+	color:#fff;
+	border:none;
+	background:#c9a131;
+	cursor:pointer;
+}
+/*footer*/
+.footer{
+	padding:50px 40px;
+	background:#191919;
+}
+.footer .main{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+.footer .main .item{
+	max-width:370px;
+}
+.footer .main .title{
+	position:relative;
+	text-align:center;
+	margin-bottom:55px;
+	font:21px/25px "Yeseva";
+	color:#fefefe;
+}
+.footer .main .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:-35px;
+	left:50%;
+	margin-left:-100px;
+	width:199px;
+	height:19px;
+	background:url(../images/decor.png) no-repeat;
+}
+.footer .main .info,
+.footer .main .info-box{
+	text-align: center;
+	font:16px/25px "OpenSans";
+	color:#fff;
+}
+.footer .main .info-box{
+	margin-bottom:30px;
+}
+.footer .main .item .card img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+}
+.footer .main .item i{
+	font-family:"OpenSansBold";
+	font-weight:700;
+}
+.footer .main .item .social-icon {
+	display:flex;
+	justify-content:center;
+}
+.footer .main .social-icon a{
+	display:block;
+	margin-left:10px;
+}
+.footer .main .social-icon img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+}
+/*end footer*/
