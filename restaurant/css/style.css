@@ -193,6 +193,25 @@ body{
 	position:absolute;
 	left:33%;
 }
+@media screen and (width:320px){
+	.about-block{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		padding:70px 0 243px;
+	}
+	.about-block .text-box{
+		width:320px;
+		padding:0 5px;
+	}
+	.about-block .img-box{
+		display:none;
+	}
+	.about-block .text-box .img-wrap img{
+	position:absolute;
+	left:23%;
+	}
+}
 /*end about*/
 /*ingred-box*/
 .ingred-box{
@@ -286,6 +305,23 @@ body{
 	width:247px;
 	height:24px;
 	background:url(../images/menu-div.png) no-repeat;
+}
+@media screen and (width:320px){
+	.menu-box .menu{
+		display:flex;
+		justify-content:center;
+		flex-direction:column;
+		padding:0;
+	}
+	.menu-box .menu-list{
+		width:320px;
+	}
+	.menu-box .menu-list + .menu-list{
+		margin-left:0px;
+	}
+	.menu-box .main .title{
+		margin-bottom:35px;
+	}
 }
 .menu-box .main .info-box{
 	padding:7px 10px 10px 13px;

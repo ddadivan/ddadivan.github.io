@@ -1,0 +1,212 @@
+@font-face {
+	font-family: 'Myriad Roman';
+	src: url('../fonts/Myriad-Roman.eot');
+	src: url('../fonts/Myriad-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Myriad-Roman.woff') format('woff'),
+		url('../fonts/Myriad-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Roman';
+	src: url('../fonts/Myriad-Bold.eot');
+	src: url('../fonts/Myriad-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Myriad-Bold.woff') format('woff'),
+		url('../fonts/Myriad-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.content{
+	width:980px;
+	margin:0 auto;
+	padding:0 20px;
+}
+*{
+	box-sizing:border-box;
+}
+.flex{
+	display:flex;
+	flex-direction:row;
+}
+/*header*/
+.header{
+	padding:25px 0 10px;
+}
+.header .logo{
+	display:block;
+}
+.header .logo img{
+	display:block;
+	margin:0 auto;
+	max-width:100%;
+}
+.header .head-box{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.header .head-right{
+	font:13px/16px "Arial";	
+}
+.header .head-right .shop{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	margin-bottom:10px;
+}
+.header .head-right .shop a{
+	display:block;
+	color:#0bb1e8;
+}
+.header .head-right .shop a:hover{
+	text-decoration: none;
+}
+.header .head-right .shop .text{
+	margin-left:5px;
+	color:#121212;
+}
+.header .head-right .shop .text i{
+	color:#9a9a9a;	
+}
+.header .head-right .block{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	padding:10px 25px 10px 10px;
+	border-radius:5px;
+	background: linear-gradient(to bottom, #5d6b6e, #303739);
+}
+.header .head-right .lang-box{
+	display:flex;
+	flex-direction:row;
+}
+.header .head-right .lang-box .title{
+	margin-right:25px;
+	padding-top:4px;
+	color:#fff;
+}
+.header .head-right .lang,
+.header .head-right .valut{
+	padding:3px 50px 3px 10px;
+	color:#9a9a9a;
+	border:1px solid #000;
+	border-radius:5px;
+	background:#fff;
+}
+.header .head-right .valut-wrap{
+	margin-left:100px;
+}
+/*end header*/
+/*nav-box*/
+.nav-box{
+	padding:10px 0;
+}
+.nav-box .nav-wrap{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding:9px 25px 9px 2px;
+	border:1px solid #d9d9d9;
+	border-radius:5px;
+	background:linear-gradient(to top, #f2f2f2, #fff);
+}
+.nav-box .nav-wrap .top-nav{
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+}
+.nav-box .nav-wrap .top-nav a{
+	display:block;
+	padding:6px 35px;
+	font:16px/18px"Myriad-Roman";
+	font-weight:700;
+	color:#2f3638;
+	text-decoration: none;
+}
+.nav-box .nav-wrap .top-nav li{
+	border-left:1px solid #e3e3e3;
+	-webkit-box-shadow:2px 0px 0px 0px #fdfdfd;
+	-moz-box-shadow:2px 0px 0px 0px #fdfdfd;
+	box-shadow:2px 0px 0px 0px #fdfdfd;
+}
+.nav-box .nav-wrap .top-nav li:last-child{
+	box-shadow:none;
+}
+.nav-box .nav-wrap .top-nav li:first-child{
+	border:none;
+}
+.nav-box .nav-wrap form{
+	padding:5px 0;
+}
+.nav-box .nav-wrap [type="search"]{
+	width:165px;
+	height:20px;
+}
+.nav-box .nav-wrap [type="button"]{
+	padding-top:2px;
+	width:28px;
+	height:23px;
+	border:none;
+	background:url(../images/search.png) no-repeat;
+}
+/*end nav-box*/
+/*gallery-box*/
+.gallery-box .gallery{
+	position:relative;
+	border:1px solid #d9d9d9;
+	border-radius:5px;
+}
+.gallery-box .main{
+	padding:5px;
+	background:#fcfcfc;
+	border:1px solid #d9d9d9;
+	border-radius:5px;
+}
+.gallery-box .gallery .foto-wrap{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	list-style:none;
+}
+.gallery-box .gallery .foto-wrap a{
+	display:block;
+	padding:20px 55px 20px 52px;
+	font:20px/22px "Myriad-Roman";
+	color:#2f3638;
+	background:linear-gradient(to top, #e5e5e5,#fff);
+	text-decoration: none;
+}
+.gallery-box .gallery .foto-wrap a.active{
+	color:#fff;
+	background:url(../images/active1.png) no-repeat;
+	background-size: cover;
+}
+.gallery-box .gallery .img-box img{
+	display:block;
+	margin:0 0 0 auto;
+	max-width:100%;
+} 
+/*end gallery-box*/
