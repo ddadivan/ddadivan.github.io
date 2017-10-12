@@ -184,14 +184,14 @@ time, mark, audio, video {
 	border:1px solid #d9d9d9;
 	border-radius:5px;
 }
-.gallery-box .gallery .foto-wrap{
+.gallery-box .foto-wrap{
 	position:absolute;
 	top:0;
 	bottom:0;
 	left:0;
 	list-style:none;
 }
-.gallery-box .gallery .foto-wrap a{
+.gallery-box .foto-wrap a{
 	display:block;
 	padding:20px 55px 20px 52px;
 	font:20px/22px "Myriad-Roman";
@@ -199,14 +199,26 @@ time, mark, audio, video {
 	background:linear-gradient(to top, #e5e5e5,#fff);
 	text-decoration: none;
 }
-.gallery-box .gallery .foto-wrap a.active{
+.gallery-box .foto-wrap a.active{
 	color:#fff;
 	background:url(../images/active1.png) no-repeat;
 	background-size: cover;
 }
-.gallery-box .gallery .img-box img{
-	display:block;
-	margin:0 0 0 auto;
+.gallery-box .img-box{
+	position:relative;
+}
+.gallery-box .img-box img{
+	visibility:hidden;
+	opacity:0;
+	position: absolute;
+	display: block;
 	max-width:100%;
-} 
+	top:0;
+	bottom:0;
+	right:0;
+}
+.gallery-box .img-box img.active{
+	visibility:visible;
+	opacity:1;
+}
 /*end gallery-box*/
