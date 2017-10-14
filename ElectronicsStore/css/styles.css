@@ -1,20 +1,15 @@
 @font-face {
-	font-family: 'Myriad Roman';
+	font-family: 'Myriad-Roman';
 	src: url('../fonts/Myriad-Roman.eot');
-	src: url('../fonts/Myriad-Roman.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Myriad-Roman.woff') format('woff'),
-		url('../fonts/Myriad-Roman.ttf') format('truetype');
+	src: local('☺'), url('../fonts/Myriad-Roman.woff') format('woff'), url('../fonts/Myriad-Roman.ttf') format('truetype'), url('../fonts/Myriad-Roman.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
-	font-family: 'Myriad Roman';
+	font-family: 'Myriad-Bold';
 	src: url('../fonts/Myriad-Bold.eot');
-	src: url('../fonts/Myriad-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Myriad-Bold.woff') format('woff'),
-		url('../fonts/Myriad-Bold.ttf') format('truetype');
-	font-weight: bold;
+	src: local('☺'), url('../fonts/Myriad-Bold.woff') format('woff'), url('../fonts/Myriad-Bold.ttf') format('truetype'), url('../fonts/Myriad-Bold.svg') format('svg');
+	font-weight: normal;
 	font-style: normal;
 }
 
