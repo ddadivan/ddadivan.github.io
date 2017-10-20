@@ -43,7 +43,7 @@ $(document).ready(function(){
   });
 
 $(document).ready(function(){
-  $('.work').slick({
+  $('.work-slider').slick({
         dots: true,
         arrows: true,
         infinite: true,

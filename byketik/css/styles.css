@@ -8,7 +8,7 @@
 }
 @font-face {
 	font-family: 'ANTQUAI';
-	src: url('fonts/ANTQUAI.eot');
+	src: url('../fonts/ANTQUAI.eot');
 	src: local('☺'), url('../fonts/ANTQUAI.woff') format('woff'), url('../fonts/ANTQUAI.ttf') format('truetype'), url('../fonts/ANTQUAI.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -76,10 +76,15 @@ body{
 	transition:linear 0.4s;
 }
 .left{
-	order:1;
+	float:left;
 }
 .right{
-	order:2;
+	float:right;
+}
+.clear:after{
+	display:block;
+	content:"";
+	clear:both;
 }
 /*slick-slide*/
 .slick-slider .slick-arrow{
@@ -214,18 +219,16 @@ body{
 	padding:50px 0;
 	background:#fff;
 }
-.header-top{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-}
 .header .nav{
-	display:flex;
-	flex-direction:row;
+	margin-left:55px;
 	list-style:none;
 }
+.header .nav li{
+	display:inline-block;
+	vertical-align: top;
+}
 .header .nav li + li{
-	margin-left:40px;
+	margin-left:30px;
 }
 .header .nav a{
 	display:block;
@@ -238,12 +241,15 @@ body{
 	border-bottom:1px solid #000;
 }
 .header .tel{
+	margin-left:55px;
 	font:22px/25px "OpenSansBoldItalic", sans-serif;
 	font-style: italic;
     font-weight: 700;
 }
+/*.headbot*/
 .headbot{
 	margin-bottom:200px;
+	background-size:cover;
 }
 .headbot .content{
 	position:relative;
@@ -253,10 +259,6 @@ body{
 	display:block;
 	margin:0 auto;
 	max-width:100%;
-}
-.headbot .down .content{
-	width:1170px;
-	margin:0 auto;
 }
 .headbot .down a{
 	position:absolute;
@@ -269,55 +271,54 @@ body{
 .work-box{
 	margin-bottom:290px;
 }
-.work{
-	display:flex;
-	flex-direction:row;
-	margin-left:155px;
+.work-slider{
+	width:912px;
+	margin:0 auto;
 }
-.work .workslide.slick-slide{
-	display:flex;
+.work-box .workslide.slick-slide{
+
 }
-.work.slick-slider .slick-arrow{
-	width:65px;
-	height:82px;
+.work-slider.slick-slider .slick-arrow{
+	width:45px;
+	height:80px;
 }
-.work.slick-slider .slick-arrow:hover{
+.work-slider.slick-slider .slick-arrow:hover{
 	background:#f1eeee;
 }
-.work.slick-slider .slick-arrow:before,
-.work.slick-slider .slick-arrow:after{
-	left: 30px;
+.work-slider.slick-slider .slick-arrow:before,
+.work-slider.slick-slider .slick-arrow:after{
+	left:17px;
 	background:#7f7f7f;
 }
-.work.slick-slider .slick-prev{
-  left:-175px;
+.work-slider.slick-slider .slick-prev{
+  left:-118px;
 }
-.work.slick-slider .slick-next{
-  right:-17px;
+.work-slider.slick-slider .slick-next{
+  right:-105px;
 }
-.work.slick-slider .slick-prev:before,
-.work.slick-slider .slick-next:before {
-    top: 10px;
+.work-slider.slick-slider .slick-prev:before,
+.work-slider.slick-slider .slick-next:before {
+    top:10px;
 }
-.work.slick-slider .slick-prev:after,
-.work.slick-slider .slick-next:after {
-    top: 32px;
+.work-slider.slick-slider .slick-prev:after,
+.work-slider.slick-slider .slick-next:after {
+    top:32px;
 }
-.work .slick-dots{
+.work-slider .slick-dots{
 	bottom:-72px;
 }
-.work .slick-dots li {
+.work-slider .slick-dots li {
     width: 16px;
     height: 16px;
     margin: 0 10px
 }
-.work .slick-dots li button{
+.work-slider .slick-dots li button{
 	width: 16px;
     height: 16px;
 	border: 1px solid #000;
     border-radius: 50%;
 }
-.work .slick-dots li button::before{
+.work-slider .slick-dots li button::before{
 	content:"";
 	width: 16px;
     height: 16px;
@@ -325,19 +326,19 @@ body{
     background: #fff;
     opacity: 0;
 }
-.work .slick-dots .slick-active{
+.work-slider .slick-dots .slick-active{
 	width: 16px;
     height: 16px;
 	border-radius:50%;
     background: #000;
 }
-.work .slick-dots li.slick-active button:before{
+.work-slider .slick-dots li.slick-active button:before{
 	opacity:0;
 }
-.work .img-box{
+.work-slider .img-box{
 	position:relative;
 }
-.work .img-box .flower{
+.work-slider .img-box .flower{
 	position:absolute;
 	display:none;
 	top:0;
@@ -347,80 +348,86 @@ body{
 	padding:168px 0 0 81px;
 	background:rgba(255,255,255,0.9);
 }
-.work .img-box .flower .title{
+.work-box .img-box .flower .title{
 	margin-bottom:6px;
 	text-align: left;
 	font:24px/28px "OpenSansRegular", sans-serif;
 }
-.work .img-box .flower li{
+.work-box .img-box .flower li{
 	margin-bottom: 7px;
 	font:20px/24px "OpenSansBold";
 	font-weight: 700;
 }
-.work .img-box .flower li i{
+.work-box .img-box .flower li i{
 	margin-left:22px;
 }
-.work .img-box:hover .flower{
+.work-box .img-box:hover .flower{
 	display:block;
 }
-.work img{
+.work-box img{
 	display:block;
 	margin:0 auto;
 	max-width:100%;
 }
-.work .info{
+.work-box .info{
 	width:355px;
 	padding:60px;
 }
-.work .work-title{
+.work-box .work-slider .work-title{
 	margin-bottom:30px;
 	font:36px/40px "ANTQUAI";
 	font-style:italic;
 	color:#444;
 }
-.work .txt{
+.work-slider .info .txt{
 	font: 14px/24px "OpenSansBold",sans-serif;
 	font-weight:600;
 	color:#333;
 	margin-bottom:55px;
 }
-.work .txt i{
+.work-box .txt span{
 	font-weight:bold;
 	color:#000;
 }
-.work .price{
+.work-box .price{
 	margin-bottom:60px;
 	font:24px/26px "OpenSansBold", sans-serif;
 	font-weight:700;
 	color:#000;
 }
-.work .btn{
+.work-box .btn{
 	text-align:left;
 }
 /*end work-box*/
 /*section-box*/
-.main{
-	padding:0 18px;
-}
-.services{
-	display:flex;
-	flex-direction:row;
+.section-box{
 	margin-bottom:200px;
 }
-.services img{
+.section-box .services{
+	margin-bottom:100px;
+}
+.section-box .content{
+	padding:0 15px;
+}
+
+.section-box .services img{
 	display:block;
 	margin:0 auto;
 	max-width:100%;
 }
-.services .info{
+.section-box .services .info-box{
 	width:450px;
+}
+.section-box .services .info-box.right{
 	margin-left:200px;
 }
-.services .foto,
-.services .foto-box{
+.section-box .services .info-box.left{
+	margin-right:200px;
+}
+.section-box .services .foto-box{
 	position:relative;
 }
-.services .foto:after{
+.right-line:after{
 	display:block;
 	position:absolute;
 	content:"";
@@ -430,27 +437,7 @@ body{
     right: -100px;
 	background:#000;
 }
-.services .title-info,
-.info-box .title-info{
-	font:30px/34px "ANTQUAI";
-	font-style:italic;
-	margin-bottom:50px;
-}
-.services .info p,
-.info-box p{
-	margin-bottom:40px;
-	font:18px/30px "OpenSansRegular", sans-serif;
-	color:#111;
-}
-.services .info .btn,
-.info-box .btn{
-	margin-top:120px;
-}
-.services .info-box{
-	width:450px;
-	margin-right:200px;
-}
-.services .foto-box:after{
+.left-line:after{
 	display:block;
 	position:absolute;
 	content:"";
@@ -459,6 +446,19 @@ body{
 	top: 12px;
     left: -100px;
 	background:#000;
+}
+.section-box .info-box .title-info{
+	font:30px/34px "ANTQUAI";
+	font-style:italic;
+	margin-bottom:50px;
+}
+.section-box .info-box .decor{
+	margin-bottom:60px;
+}
+.section-box .info-box p{
+	margin-bottom:30px;
+	font:18px/30px "OpenSansRegular", sans-serif;
+	color:#111;
 }
 /*end section-box*/
 /*gallery-box*/
@@ -537,7 +537,6 @@ body{
 .contact-wrap .contact{
 	padding:100px 0;
 	color:#fff;
-	background:url(../images/contactbg.png) no-repeat;
 	background-size:cover;
 }
 .contact-wrap .txt{
@@ -550,10 +549,10 @@ body{
 	font-family:"OpenSansBold", sans-serif;
 	font-weight:700;
 }
-.contact-wrap .txt > div{
+.contact-wrap .txt p{
 	margin-bottom:10px;
 }
-.social{
+.social-icon{
 	width:590px;
 	margin:0 auto;
 }
@@ -642,19 +641,20 @@ body{
 .insta{
 	margin:0 auto;
 }
-.insta li{
+.insta-wrap .insta li{
 	position:relative;
 }
-.insta a{
+.insta-wrap .insta a{
 	display:none;
 	position:absolute;
 	top:0;
 	left:35px;
+	transition:3s linear;
 }
-.insta li:hover a{
+.insta-wrap .insta li:hover a{
 	display:block;
 }
-.insta img{
+.insta-wrap .insta img{
 	display:block;
 	margin:0 auto;
 	max-width:100%;
@@ -704,11 +704,12 @@ body{
 .address-box .address{
 	width:350px;
 	margin:0 auto;
-	font:30px/36px "OpenSansRegular", sans-serif;
-	color:#fff;
-	
 }
-.address-box .address i{
+.address-box .address p{
+	font:30px/36px "OpenSansRegular", sans-serif;
+	color:#fff;	
+}
+.address-box .address span{
 	font:30px/36px "OpenSansBold",sans-serif;
 	font-weight: 700;
 }
@@ -727,16 +728,13 @@ body{
 	margin:0 auto;
 }
 .footer{
-	margin-bottom:50px;
+	padding:0 0 50px;
 }
 .footer .content{
 	padding:0 15px;
 	box-sizing:border-box;
 }
-.footer .copy-wrap{
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
+.footer .copy{
 	font:16px/20px "OpenSansSemiBold", sans-serif;
 	color:#7f7f7f;
 	font-size:700;
