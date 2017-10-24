@@ -90,7 +90,6 @@ body{
 .header .nav a:hover{
 	border-color:#eee5c8; 	
 }
-
 .header .top-banner .title{
 	position:relative;
 	margin:0 auto;
@@ -461,3 +460,4 @@ body{
 	justify-content:center;
 }
 /*end footer*/
+
