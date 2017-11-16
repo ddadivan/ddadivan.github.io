@@ -51,9 +51,15 @@ $(document).ready(function(){
       asNavFor: '.slider-wrap',
       dots:false,
     });
+    $('.price .btn').mouseenter(function() {
+      $('.price').removeClass('active');
+      $( this ).closest('.price').addClass('active');
+    });
+    $('.price .btn').mouseleave(function() {
+      $('.price').removeClass('active');
+    });
     $('.nav a').click(function() {
         $('.nav a').removeClass("active"); // удаляем у всех ссылок класс active
         $(this).addClass("active"); // устанавливаем класс active при нажатии
     });
 });
-   
