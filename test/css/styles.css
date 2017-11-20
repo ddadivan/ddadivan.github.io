@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*{
+	box-sizing:border-box;
+	transition:all 0.4s linear;
+}
+.wrapper{
+	position:relative;
+	width:440px;
+	margin:0 auto;
+	padding:41px 0;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+/*item-wrap*/
+.wrapper .item-wrap{
+	margin:0 auto;
+	padding:51px 0 42px;
+}
+.wrapper .item-box{
+	position:relative;
+	width:279px;
+	margin-left:113px;
+	padding:15px 0 60px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	z-index:5;
+}
+.wrapper .item-box .croupier{
+	position:absolute;
+	top:-66px;
+	left:50%;
+	margin-left:-36.5px;
+	z-index:1;
+}
+.wrapper .item-box .title{
+	margin-bottom:5px;
+	text-align:center;
+	color:#fff;
+}
+.wrapper .item-box .cart-box{
+	position:relative;
+	text-align: center;
+	letter-spacing:-4px;
+	list-style:none;
+}
+.wrapper .item-box .cart-box li{
+	display:inline-block;
+}
+.wrapper .item-box .cart-box li + li{
+	margin-left:2px;
+}
+/*end item-wrap*/
+/*win-wrap*/
+.wrapper .win-wrap{
+	position:absolute;
+    bottom: 35px;
+    left: 74px;
+    z-index:10;
+}
+.wrapper .win-box{
+	position:relative;
+	width:105px;
+	height:84px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+}
+.wrapper .win-box img{
+	display:block;
+	max-width:100%;
+	margin:0 auto;
+}
+.wrapper .win-box .chip,
+.wrapper .win-box .cart-one,
+.wrapper .win-box .cart-two,
+.wrapper .win-box .win,
+.wrapper .win-box .number,
+.wrapper .win-box .text{
+	position:absolute;
+}
+.wrapper .win-box .chip{
+	top: 16px;
+    left: 6px;
+}
+.wrapper .win-box .cart-one{
+	top: 6px;
+    left: 32px;
+}
+.wrapper .win-box .cart-two{
+	top: 5px;
+    right:5px;
+}
+.wrapper .win-box .win{
+	bottom:20px;
+    right:19px;
+	width:46px;
+	text-align:center;
+	font:700 13px/17px "Arial-Bold", sans-serif;
+	color:#fff;
+	background: #1c790f;
+	background: -webkit-linear-gradient(bottom,#1c790f,#88c63c);
+	background: -o-linear-gradient(bottom,#1c790f,#88c63c);
+	background: -moz-linear-gradient(bottom,#1c790f,#88c63c);
+	background: linear-gradient(to top, #1c790f, #88c63c);
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+}
+.wrapper .win-box .number{
+	bottom: 6px;
+    left: 23px;
+	padding:4px;
+	text-align:center;
+	font:700 13px "Arial-Bold", sans-serif;
+	color:#fff;
+	background:url(../images/number.png) no-repeat;
+	background-size:cover;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+.wrapper .win-box .text{
+    bottom: 6px;
+    right: -1px;
+	color:#da3a0a;
+	font:700 12px/12px "Arial-bold",sans-serif;
+}
+/*end win-wrap*/
