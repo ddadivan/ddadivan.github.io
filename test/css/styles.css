@@ -1,3 +1,11 @@
+@font-face {
+	font-family:'Days';
+	src: url('../fonts/Days.eot');
+	src: local('☺'), url('../fonts/Days.woff') format('woff'), url('../fonts/Days.ttf') format('truetype'), url('../fonts/Days.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,14 +35,19 @@ time, mark, audio, video {
 	position:relative;
 	width:440px;
 	margin:0 auto;
-	padding:41px 0;
+	padding:104px 0 77px;
 	background-size:cover;
 	background-repeat:no-repeat;
 }
 /*item-wrap*/
 .wrapper .item-wrap{
+	position:relative;
 	margin:0 auto;
-	padding:51px 0 42px;
+}
+.wrapper .croupier{
+	position:absolute;
+	top:-66px;
+	left:50%;
 }
 .wrapper .item-box{
 	position:relative;
@@ -45,17 +58,11 @@ time, mark, audio, video {
 	background-repeat:no-repeat;
 	z-index:5;
 }
-.wrapper .item-box .croupier{
-	position:absolute;
-	top:-66px;
-	left:50%;
-	margin-left:-36.5px;
-	z-index:1;
-}
 .wrapper .item-box .title{
 	margin-bottom:5px;
 	text-align:center;
-	color:#fff;
+	color:rgba(255,255,255,0.62);
+	font:16px/17px "Days",sans-serif;
 }
 .wrapper .item-box .cart-box{
 	position:relative;
@@ -65,6 +72,7 @@ time, mark, audio, video {
 }
 .wrapper .item-box .cart-box li{
 	display:inline-block;
+	vertical-align:top;
 }
 .wrapper .item-box .cart-box li + li{
 	margin-left:2px;
@@ -73,8 +81,8 @@ time, mark, audio, video {
 /*win-wrap*/
 .wrapper .win-wrap{
 	position:absolute;
-    bottom: 35px;
-    left: 74px;
+	bottom:-47px;
+    left:76px;
     z-index:10;
 }
 .wrapper .win-box{
@@ -127,8 +135,8 @@ time, mark, audio, video {
 	border-radius:3px;
 }
 .wrapper .win-box .number{
-	bottom: 6px;
-    left: 23px;
+	bottom:6px;
+    left:24px;
 	padding:4px;
 	text-align:center;
 	font:700 13px "Arial-Bold", sans-serif;
@@ -140,8 +148,8 @@ time, mark, audio, video {
 	border-radius:50%;
 }
 .wrapper .win-box .text{
-    bottom: 6px;
-    right: -1px;
+    bottom:6px;
+    right:-1px;
 	color:#da3a0a;
 	font:700 12px/12px "Arial-bold",sans-serif;
 }
