@@ -24,7 +24,7 @@ body{
 	width:100%;
 }
 .content{
-	width:1250px;
+	max-width:1250px;
 	margin:0 auto;
 	padding:0 40px;
 }
@@ -41,6 +41,13 @@ body{
 	display:block;
 	content:"";
 	clear:both;
+}
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 /*header*/
 .header{
@@ -117,7 +124,7 @@ body{
 .header .top-banner .btn{
     position: relative;
 	display:inline-block;
-	margin:0 15px;
+	margin:0 15px 15px;
 	padding:20px 50px;
 	font:18px/21px "Lato";
 	color:#fff;
@@ -131,16 +138,31 @@ body{
 .header .top-banner .btn:hover{
 	background:rgba(255,255,255,0.3);
 }
+@media screen and (max-width:679px){
+	.header .top-banner .title{
+		font-size:65px;
+	}
+}
+@media screen and (max-width:480px){
+	.header .top-banner .title{
+		font-size:55px;
+	}
+}
 /*end header*/
 /*about*/
 .about-box{
-	padding:65px 0 55px;
+	padding:5.2% 0 4.4%;
 	background-size:cover;
 }
 .about-box .text-box{
+	width:34.4%;
 	max-width:430px;
 	padding-top:33px;
 
+}
+.about-box .img-box{
+	max-width:535px;
+	margin-left:10.4%;
 }
 .about-box .title{
 	position:relative;
@@ -165,13 +187,33 @@ body{
 	max-width:100%;
 	margin:0 auto;
 }
-.about-box .text-box img{
-	margin-left:130px;
-}
 .about-box .info{
 	margin-bottom:50px;
 	text-align:center;
 	font:16px/25px "Lato";
+}
+@media screen and (max-width:1060px){
+	.about-box .text-box{
+		float:none;
+		width:50%;
+		max-width:430px;
+		margin:0 auto;
+	}
+	.about-box .img-box{
+		float:none;
+		max-width:535px;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width:579px){
+	.about-box .text-box{
+		width:80%;
+	}
+}
+@media screen and (max-width:399px){
+	.about-box .text-box{
+		width:90%;
+	}
 }
 /*end about*/
 /*ingred-box*/
@@ -182,9 +224,10 @@ body{
 	padding:100px 40px;
 }
 .background-box .info-box{
+	width:46.6%;
 	max-width:570px;
 	margin:0 0 0 auto;
-	padding:78px 70px;
+	padding:70px 5.6%;
 	color:#fff;
 	background:rgba(0,0,0,0.67);
 }
@@ -208,9 +251,9 @@ body{
 }
 .background-box  .txt{
 	margin-bottom:70px;
-	padding:0 10px;
+	padding:0 0.8%;
 	text-align: center;
-	font:16px/25px "Lato";
+	font:400 16px/25px "Lato",sans-serif;
 	word-spacing:2px;
 }
 .background-box img{
@@ -218,15 +261,48 @@ body{
 	max-width:100%;
 	margin:0 auto;
 }
-.ingred-box .main .img-box{
-	padding:0 15px;
+.background-box .img-box{
+	justify-content:space-around;
 	list-style:none;
 }
-.background-box .img-box li{
-	display:inline-block;
+.background-box .img-box .img-item{
+	width:30%;
 }
-.background-box .img-box li + li{
-	margin-left:30px;
+@media screen and (max-width:799px){
+	.background-box .info-box{
+		width:60%;
+		padding:30px 5.6%;
+	}
+	.background-box .info-box .txt{
+		margin-bottom:30px;
+	}
+}
+@media screen and (max-width:679px){
+	.background-box .info-box{
+		width:70%;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width:575px){
+	.background-box{
+		padding:50px 20px;
+	}
+	.background-box .info-box{
+		width:90%;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width:436px){
+	.background-box{
+		padding:20px 10px;
+	}
+	.background-box .content{
+		padding:0;
+	}
+	.background-box .info-box{
+		width:90%;
+		margin:0 auto;
+	}
 }
 /*end ingred-box*/
 /*menu-box*/
@@ -235,7 +311,8 @@ body{
 	background-size:cover;
 }
 .menu-box .menu-list{
-	width:570px;
+	width:45.6%;
+	max-width:570px;
 	padding:0 55px;
 }
 .menu-box .section{
@@ -299,18 +376,131 @@ body{
 	height:22px;
 	background:url(../images/special.png) no-repeat;	
 }
+@media screen and (max-width:899px){
+	.menu-box .menu-list{
+		width:48.6%;
+		max-width:570px;
+	}
+}
+@media screen and (max-width:829px){
+	.menu-box .menu-list{
+		float:none;
+		width:60%;
+		margin:0 auto;
+		padding:0;
+	}
+}
+@media screen and (max-width:679px){
+	.menu-box .menu-list{
+		float:none;
+		width:70%;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width:579px){
+	.menu-box .menu-list{
+		float:none;
+		width:90%;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width:399px){
+	.menu-box{
+		padding:30px 0;
+	}
+	.menu-box .content{
+		padding:0 15px;
+	}
+	.menu-box .menu-list{
+		float:none;
+		width:90%;
+		margin:0 auto;
+	}
+}
 /*end menu-box*/
+/*review-box*/
+.review-box{
+	background-size:cover;
+	background-position:50% 50%;
+}
+.review-box{
+	padding:100px 40px;
+}
+.review-box .info-box{
+	width:61.6%;
+	max-width:770px;
+	margin:0 auto;
+	padding:70px 5.6%;
+	color:#fff;
+	background:rgba(0,0,0,0.67);
+}
+.review-box .title{
+	position:relative;
+	margin-bottom:65px;
+	text-align:center;
+	font:36px/41px "Yeseva";
+	font-weight:700;
+}
+.review-box .title:after{
+	display:block;
+	position:absolute;
+	content:"";
+	bottom:-39px;
+	left:50%;
+	margin-left:-123px;
+	width:247px;
+	height:24px;
+	background:url(../images/divider-ing.png) no-repeat;
+}
+.review-box  .txt{
+	margin-bottom:70px;
+	padding:0 0.8%;
+	text-align: center;
+	font:400 16px/25px "Lato",sans-serif;
+	word-spacing:2px;
+}
+.review-box .author{
+	text-align:center;
+	font:400 16px/25px "Lato",sans-serif;
+}
+@media screen and (max-width:759px){
+	.review-box .content{
+		padding:0 15px;
+	}
+	.review-box .info-box{
+		width:70%;
+	}
+}
+@media screen and (max-width:579px){
+	.review-box .info-box{
+		width:80%;
+	}
+}
+@media screen and (max-width:479px){
+	.review-box{
+		padding:30px 0;
+	}
+	.review-box .info-box{
+		width:90%;
+	}
+}
+/*end review-box*/
 /*reservations-box*/
 .reservations-box{
 	padding:100px 40px;
 	background-size:cover;
 }
 .reservations-box .info-box{
-	width:430px;
+	width:39.8%;
+	max-width:430px;
+}
+.reservations-box .img-wrap{
+	width:57%;
+	max-width:600px;
 }
 .reservations-box img{
 	display:block;
-	margin:0 30px 0 auto;
+	margin:0 4% 0 auto;
 	max-width:100%;
 }
 .reservations-box .title{
@@ -351,6 +541,9 @@ body{
 .reservations-box .input-wrap{
 	margin-bottom:25px;
 }
+.reservations-box .input-box{
+	max-width:430px;
+}
 .reservations-box .input-wrap input,
 .reservations-box .input-wrap select{
 	width:200px;
@@ -375,11 +568,65 @@ body{
 	text-align: center;
 }
 .reservations-box  .submit-wrap .btn{
-	padding:10px 65px;
-	font:16px/18px"OpenSans", sans-serif;
+	width:200px;
+	font:16px/36px"OpenSans", sans-serif;
 	color:#fff;
 	border:none;
 	background:#c9a131;
+}
+@media screen and (max-width:1189px){
+	.reservations-box .input-wrap,
+	.reservations-box .input-wrap{
+		float:none;
+		width:200px;
+		margin:0 auto 25px;
+	}
+	.reservations-box img{
+		display:block;
+		margin-bottom:20px;
+		max-width:100%;
+	}
+}
+@media screen and (max-width:779px){
+	.reservations-box .info-box{
+		float:none;
+		width:100%;
+		max-width:430px;
+		margin: 0 auto;
+	}
+	.reservations-box .img-wrap{
+		display:none;
+	}
+	.reservations-box .input-wrap,
+	.reservations-box .input-wrap{
+		width:200px;
+		margin:0 auto 25px;
+	}
+	.reservations-box .input-wrap.text{
+		float:left;
+	}
+	.reservations-box .input-wrap.email{
+		float:right;
+	}
+	.reservations-box .input-wrap.date{
+		float:left;
+	}
+	.reservations-box .input-wrap.number{
+		float:right;
+	}
+}
+@media screen and (max-width:569px){
+	.reservations-box .content{
+		padding:0 15px;
+	}
+}
+@media screen and (max-width:519px){
+	.reservations-box .input-wrap.text,
+	.reservations-box .input-wrap.email,
+	.reservations-box .input-wrap.date,
+	.reservations-box .input-wrap.number{
+		float:none;
+	}
 }
 /*end reservations-box*/
 /*footer*/
@@ -388,17 +635,19 @@ body{
 	background:#191919;
 }
 .footer .col-1{
-	width:370px;
+	width:31.7%;
+	max-width:370px;
 }
 .footer .col-2,
 .footer .col-3{
-	width:230px;
+	width:19.7%;
+	max-width:230px;
 }
 .footer .col-2{
-	margin-left:100px;
+	margin-left:8.5%;
 }
 .footer .col-3{
-	margin-left:170px;
+	margin-left:20px;
 }
 .footer .title{
 	position:relative;
@@ -458,6 +707,20 @@ body{
 .footer .main .item .social-icon {
 	display:flex;
 	justify-content:center;
+}
+@media screen and (max-width:1023px){
+	.footer .col-1,
+	.footer .col-2,
+	.footer .col-3{
+		float:none;
+		width:100%;
+		margin:0 auto 40px;
+	}	
+}
+@media screen and (max-width:580px){
+	.footer .content{
+		padding:0 15px;
+	}	
 }
 /*end footer*/
 
