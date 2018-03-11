@@ -1,0 +1,116 @@
+.info-wrap{
+	padding:66px 0 75px;
+	@media screen and (max-width:799px){
+		padding:50px 0 30px;
+	}
+	.content{
+		@media screen and (max-width:1024px){
+			flex-direction:column;
+			align-items:center;
+		}
+		.left-block{
+			max-width:437px;
+			width:45.5%;
+			@media screen and (max-width:1024px){
+				width:70%;
+				margin-left:0;
+			}
+			@media screen and (max-width:699px){
+				width:100%;
+			}
+			.about-box{
+				margin-bottom:70px;
+				.about-title{
+					position:relative;
+					margin-bottom:21px;
+					padding-left:60px;
+					font-size:16px;
+					line-height:19px;
+					color:#666;
+					font-weight:700;
+					&:after{
+						position:absolute;
+						display:block;
+						content:"";
+						left:0;
+					    top:50%;
+					    margin-top:-26.5px;
+						width:53px;
+						height:44px;
+						background:url(../../images/quotes.png) no-repeat;
+					}
+					span{
+						text-transform:uppercase;
+						font-weight:400;
+					}
+				}
+				.info{
+					color:#666;
+					font-size:13px;
+					line-height:16px;
+				}
+			}
+		}
+		.right-block{
+			max-width:448px;
+			width:46.7%;
+			margin-left:75px;
+			@media screen and (max-width:1024px){
+				width:70%;
+				margin-left:0;
+			}
+			@media screen and (max-width:699px){
+				width:100%;
+			}
+			.title{
+				@media screen and (max-width:549px) and (min-width:320px){
+					text-align:center;
+				}
+			}
+			.info-box{
+				margin-bottom:30px;
+				@media screen and (max-width:549px) and (min-width:320px){
+					flex-direction:column;
+				    align-items:center;
+				}
+				.img-wrap{
+					width:26.4%;
+					max-width:120px;
+					padding:4px;
+					border:1px solid #dfdfdf;
+					@media screen and (max-width:549px) and (min-width:320px){
+						width:40%;
+					}
+					img{
+						display:block;
+						max-width:100%;
+						margin:0 auto;
+					}
+				}
+				.info-wrap{
+					width:71.2%;
+					padding:13px 0 16px 12px;
+					max-width:319px;
+					@media screen and (max-width:549px) and (min-width:320px){
+						width:100%;
+					}
+					.name{
+						margin-bottom:21px;
+						font-size:16px;
+						line-height:19px;
+						color:#666;
+						font-weight:700;
+						@media screen and (max-width:549px) and (min-width:320px){
+							text-align:center;
+						}
+					}
+					.info{
+						color:#666;
+						font-size:13px;
+						line-height:16px;
+					}
+				}
+			}
+		}
+	}
+}

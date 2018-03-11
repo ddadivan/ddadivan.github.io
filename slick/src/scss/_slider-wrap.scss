@@ -1,0 +1,132 @@
+.slider-wrap{
+	padding-top:50px;
+	img{
+		display:block;
+		max-width:100%;
+		margin:0 auto;	
+	}
+	.slider-box{
+		width:100%;
+		outline:none;
+		border-bottom:1px solid #e1e1e1;
+		.slick-prev, .slick-next{
+			width:34px;
+			height:62px;
+			&:before{
+				opacity:0;
+			}
+		}
+		.slick-prev{
+			left:0;
+			background:url(../../images/left-arrow.png) no-repeat;
+			background-size:contain;
+			@media screen and (max-width:549px) and (min-width:320px){
+				height:45px;
+				left:-15px;	
+			}
+		}
+		.slick-next{
+			right:0;
+			background:url(../../images/right-arrow.png) no-repeat;
+			background-size:contain;
+			@media screen and (max-width:549px) and (min-width:320px){
+				height:45px;
+				right:-15px;	
+			}
+		}
+		.slider{
+			display: flex;
+		    position: relative;
+		    padding: 0 2% 0.3%;
+			    @media screen and (max-width:799px){
+					flex-direction:column;
+					align-items:center;
+					padding-bottom:1%;
+			    }
+		    &:after{
+				position:absolute;
+				content:"";
+				display:block;
+				height:26px;
+				bottom:0;
+				left:0;
+				right:0;
+				background:url(../../images/b-shadow.png) bottom no-repeat;
+				background-size:contain;
+				z-index:-1;
+			}
+			.img-wrap{
+				max-width:430px;
+				width:52.4%;
+				@media screen and (max-width:799px){
+					width:80%;
+					margin-left:0;
+				}
+				@media screen and (max-width:549px) and (min-width:320px){
+					width:100%;
+				}
+			}
+			.info-box{
+				max-width:350px;
+				width:42.7%;
+				margin-left:40px;
+				@media screen and (max-width:799px){
+					width:80%;
+					margin-left:0;
+				}
+				@media screen and (max-width:549px) and (min-width:320px){
+					width:100%;
+				}
+				.title{
+					margin-bottom:10px;
+					font-size:56px;
+					line-height:64px;
+					text-transform:uppercase;
+					@media screen and (max-width:1024px){
+						font-size:40px;
+						line-height:45px;
+					}
+					@media screen and (max-width:799px){
+						font-size:35px;
+					}
+					@media screen and (max-width:549px) and (min-width:320px){
+						font-size:19px;
+					}
+				}
+				.text{
+					font-size:16px;
+					line-height:20px;
+					color:#666;
+					margin-bottom:24px;
+					@media screen and (max-width:549px) and (min-width:320px){
+						font-size:14px;
+					}
+				}
+				.btn-wrap{
+					text-align:left;
+				}
+				.btn{
+					display:inline-block;
+					position:relative;
+					padding-right:10px;
+					text-transform:uppercase;
+					text-decoration:none;
+					color:#970d00;
+					font-size:16px;
+					cursor:pointer;
+					&:hover:after{
+						right:-5px;
+					}
+					&:after{
+						position:absolute;
+						display:block;
+						content:"\00BB";
+						top:-1px;
+					    right:0;
+						transition:.3s linear;
+					}
+				}
+			}
+		}
+	}
+}

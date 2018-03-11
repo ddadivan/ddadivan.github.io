@@ -1,0 +1,31 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font:13px/21px "Georgia", sans-serif;
+	background:#fff;
+}
+.clear:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+.content{
+	max-width:1000px;
+	width:100%;
+	margin:0 auto;
+	padding:0 20px;
+	overflow:hidden;
+}
+.flex{
+	display:flex;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+}
+.title{
+	margin-bottom:43px;
+	font-size:22px;
+	line-height:26px;
+	color:#666;
+}
