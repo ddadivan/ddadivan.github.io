@@ -4,6 +4,43 @@
 body{
 	font:13px/21px "Georgia", sans-serif;
 	background:#fff;
+	min-width:320px;
+	&.no-scroll{
+		position:fixed;
+		top: 0;
+	    left: 0;
+	    right: 0;
+		overflow:hidden;
+		@media screen and(min-width:750px){
+	    	overflow:visible;
+	    	position:static;
+	    }
+	}
+}
+.layout{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0);
+    z-index: -5;
+    cursor: pointer;
+    -moz-transition: background .3s 0s;
+    -o-transition: background .3s 0s;
+    -webkit-transition: background .3s;
+    -webkit-transition-delay: 0s;
+    transition: background .3s 0s;
+    @media screen and(min-width:750px){
+    	display:none!important;
+    }
+    @media screen and(max-width:749px){
+    	display:block!important;
+    }
+	&.active{
+		z-index:10;
+		background: rgba(0,0,0,.5);
+	}
 }
 .clear:after{
 	display:block;
@@ -16,6 +53,9 @@ body{
 	margin:0 auto;
 	padding:0 20px;
 	overflow:hidden;
+	@media screen and(max-width:749px){
+		padding:0 15px;
+	}
 }
 .flex{
 	display:flex;
