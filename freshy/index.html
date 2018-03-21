@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes">
+	<title>Freshy</title>
+	<link type="text/css" rel="stylesheet" href="dist/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="dist/css/slick.css">
+	<link type="text/css" rel="stylesheet" href="dist/css/slick-theme.css">
+	<link type="text/css" rel="stylesheet" href="dist/css/styles.css">
+	<style type="text/css">
+		.map-box{
+			width:60%;
+		}
+		#map_js {
+	        height:534px;
+	        width:100%;
+	    }
+	    .gm-style-iw{
+	    	max-width:260px;
+	    }
+	    .gm-style-iw * {
+	        display: block;
+	        width: 100%;
+	    }
+	    .gm-style-iw h4, .gm-style-iw p {
+	        margin: 0;
+	        padding: 0;
+	    }
+	    .gm-style-iw a {
+	        color: #4272db;
+	    }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="content flex">
+				<a href="#" class="header__logo">SWIEZE<span class="header__logo_s-text">RYBY</span><span class="header__logo_m-text">.COM</span></a>
+				<div class="header__nav-wrap">
+					<ul class="header__nav">
+						<li>
+							<a href="#banner" class="active">HOME</a>
+						</li>
+						<li>
+							<a href="#info">O NAS</a>
+						</li>
+						<li>
+							<a href="#catalog">ASORTYMENT</a>
+						</li>
+						<li>
+							<a href="#service">WSPÓŁPRACA</a>
+						</li>
+						<li>
+							<a href="#contacts">KONTAKT</a>
+						</li>
+					</ul>
+					<div class="btn-wrap">
+						<a href="#" class="btn">TEL. 500 110 110</a>
+					</div>
+				</div>
+				<div class="btn-wrap">
+					<a href="#" class="btn">TEL. 500 110 110</a>
+				</div>
+				<a href="javascript:void(0);" class="mob-btn">
+					<div>Menu</div>
+				</a>
+			</div>
+		</header>
+		<section id="banner" class="banner">
+			<img src="images/banner.png" alt="">
+			<div class="banner__box">
+				<h1>ŚWIEŻE RYBY</h1>
+				<div class="banner__text">Zobacz, co jeszcze oferujemy!</div>
+			</div>
+		</section>
+		<section id="info" class="info"">
+			<div class="content">
+				<div class="info__info-wrap flex">
+					<div class="info__info-box">
+						<h2>O NAS</h2>
+						<div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id. Aenean imperdiet diam nec efficitur commodo. Morbi at purus tempus tellus tempus placerat. Sed faucibus sed elit at lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent posuere orci justo, eu fermentum quam cursus quis. Proin consequat molestie magna accumsan placerat. Nulla quis consectetur tortor. Nam viverra consectetur risus iaculis ultrices.</div>
+						<div class="info__phone">TEL. 500 110 110</div>
+						<div class="btn-wrap taleft">
+							<a href="#" class="btn">HISTORIA NASZEJ FIRMY</a>
+						</div>
+					</div>
+					<div class="info__img-box">
+						<img src="images/info.png" alt="">
+						<div class="img-box__text">NASZ SKLEP</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="catalog" class="slider" style="background:url(images/slider_bg.png) no-repeat;">
+			<div class="content">
+				<div class="slider__slider-wrap">
+					<h2>ASORTYMENT</h2>
+					<div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id. Aenean imperdiet diam nec efficitur commodo. Morbi at purus tempus tellus tempus placerat. Sed faucibus sed elit at lacinia</div>
+					<div class="slider__slider-box flex">
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_1.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">DORADA ŚWIEŻA</div>
+								<div class="slider__item_price">14,99 ZŁ/KG</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_2.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">PSTRĄG PATROSZONY</div>
+								<div class="slider__item_price">20,99 ZŁ/KG</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_3.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">KREWETKI TYGRYSIE</div>
+								<div class="slider__item_price">39,99 ZŁ/KG</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_4.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">MAKRELA WĘDZONA</div>
+								<div class="slider__item_price">5,99ZŁ/SZT</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_1.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">DORADA ŚWIEŻA</div>
+								<div class="slider__item_price">14,99 ZŁ/KG</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_2.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">PSTRĄG PATROSZONY</div>
+								<div class="slider__item_price">20,99 ZŁ/KG</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_3.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">KREWETKI TYGRYSIE</div>
+								<div class="slider__item_price">39,99 ZŁ/KG</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__img">
+								<img src="images/slider_4.png" alt="">
+							</div>
+							<div class="slider__info">
+								<div class="slider__item_name">MAKRELA WĘDZONA</div>
+								<div class="slider__item_price">5,99ZŁ/SZT</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn">ZAMÓW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-wrap">
+						<a href="#" class="btn">ZOBACZ CAŁY ASORTYMENT</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="service" class="services">
+			<div class="content">
+				<div class="services__wrap">
+					<div class="services__box flex">
+						<div class="services__block">
+							<div class="services__icon">
+								<img src="images/icon_1.png" alt="">
+							</div>
+							<h3>CATERING</h3>
+							<div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.</div>
+						</div>
+						<div class="services__block">
+							<div class="services__icon">
+								<img src="images/icon_1.png" alt="">
+							</div>
+							<h3>SPRZEDAŻ</h3>
+							<div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.</div>
+						</div>
+						<div class="services__block">
+							<div class="services__icon">
+								<img src="images/icon_1.png" alt="">
+							</div>
+							<h3>DOSTAWY</h3>
+							<div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id.</div>
+						</div>
+					</div>
+					<div class="btn-wrap">
+						<a href="#" class="services__btn">SPRAWDŹ MOŻLIWOŚCI</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contacts" class="map">
+			<div class="content">
+				<div class="map-wrap">
+					<div class="map-box">
+						<div id="map_js"></div>
+						<div class="blackout"></div>
+					</div>
+					<div class="contact-wrap skew">
+						<div class="contact unskew">
+							<h2>KONTAKT</h2>
+							<div class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie egestas massa, et sollicitudin urna mattis faucibus. Praesent sagittis laoreet est, et efficitur enim lacinia id. Aenean imperdiet diam nec efficitur commodo. Morbi at purus tempus tellus tempus placerat. Sed faucibus sed elit at lacinia.</div>
+							<div class="btn-wrap">
+								<a href="#" class="btn">KONTAKT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="content">
+				<div class="footer__box flex">
+					<div class="footer__info">
+						<h4>O NAS</h4>
+						<ul class="info__list">
+							<li>O nas</li>
+							<li>Asortyment</li>
+							<li>Współpraca</li>
+							<li>Kontakt</li>
+						</ul>
+					</div>
+					<div class="footer__info">
+						<h4>WSPÓŁPRACA</h4>
+						<ul class="info__list">
+							<li>Warunki współpracys</li>
+							<li>Cennik</li>
+							<li>WUmowy</li>
+							<li>Dostawy</li>
+						</ul>
+					</div>
+					<div class="footer__info">
+						<h4>GODZINY OTWARCIA</h4>
+						<ul class="info__list">
+							<li><span>Pon. - Wt.</span> 6:00 - 19:00</li>
+							<li><span>Śr. - Pt.</span> 6:00 - 18:00</li>
+							<li><span>Sobota</span> 6:00 - 16:00</li>
+							<li><span>Niedziela i święta</span> 7:00 - 14:00</li>
+						</ul>
+					</div>
+					<div class="footer__info">
+						<h4>KONTAKT</h4>
+						<ul class="info__list">
+							<li>ul. Upalna 99</li>
+							<li>15-600 Białystok</li>
+							<li>tel. <span>500 110 110</span></li>
+							<li>e-mail <span>sklep@swiezeryby.com</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copy">
+				<div class="content flex">
+					<div class="footer__logo">&copy; SWIEZERYBY.COM 2016</div>
+					<div class="footer__copy-text">W GÓRĘ</div>					
+				</div>
+			</div>
+		</footer>
+		
+
+	<div class="layout"></div>
+
+	</div>
+
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5mn7hQmaxIeLcbe-RE7MVlWlfzcXiPCg&callback=initMap">
+    </script>
+	<script src="dist/js/jquery-3.2.1.min.js"></script>
+	<script src="dist/js/slick.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?language=ru"></script>
+	<script src="dist/js/map_ignor.js"></script>
+	<script src="dist/js/app.js"></script>
+</body>
+</html>

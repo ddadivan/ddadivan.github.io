@@ -1,0 +1,72 @@
+.services{
+	.services__wrap{
+		padding:102px 0 92px;
+		@media screen and (max-width:680px){
+		    padding: 42px 0 62px;
+		}
+		.services__box{
+			justify-content: space-between;
+			margin-bottom:62px;
+			@media screen and (max-width:780px){
+			    flex-direction:column;
+			    align-items:center;
+			    margin-bottom:0;
+			}
+			.services__block{
+				width:32%;
+				@media screen and (max-width:780px){
+					width:70%;
+					margin-bottom:30px;
+				}
+				@media screen and (max-width:480px){
+					width:100%;
+				}
+				img{
+					display:block;
+					max-width:100%;
+					margin:0 auto;
+				}
+				h3{
+					position:relative;
+					text-align:center;
+					color:#00a1eb;
+					font-size:24px;
+					line-height:105px;
+					&:after{
+						position:absolute;
+						display:block;
+						content:"";
+						left:50%;
+						bottom:21px;
+						margin-left:-40px;
+						width:80px;
+						height:1px;
+						background:#a1a1a1;
+					}
+				}
+				.services__text{
+					font:400 14px/22px "Hind", sans-serif;
+					color:#737373;
+					text-align:center;
+				}
+			}
+		}
+		.services__btn{
+			display:block;
+			width:152px;
+			margin:0 auto;
+			padding:14px 0;
+			text-decoration:none;
+			text-align:center;
+			color:#fff;
+			font-size:14px;
+			line-height:16px;
+			background:#00a1eb;
+			border-radius:4px;
+			transition:.3s linear;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}
