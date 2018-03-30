@@ -1,0 +1,15 @@
+.header{
+	padding:52px 0;
+}
+.logo-wrap{
+	text-align:center;
+	.logo{
+		display:inline-block;
+		vertical-align:top;
+	}
+	img{
+		display:block;
+		max-width:100%;
+		margin:0 auto;
+	}
+}

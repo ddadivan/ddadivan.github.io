@@ -1,0 +1,60 @@
+.panel{
+	padding:15px 28px;
+	@include border-rad(7px);
+	background:#fff;
+}
+.btn{
+	display:inline-block;
+	vertical-align:top;
+	font:18px/36px "ARIALN",sans-serif;
+	color:#fffefe;
+	text-transform:uppercase;
+	text-align:center;
+	padding:2px 20px;
+	background:#8cbf55;
+	@include border-rad(4px);
+	cursor:pointer;
+	outline:none;
+	@include transition(all 0.2s ease-out);
+	&:hover{
+		background:#f1f1f1;
+		color:#656565;
+	}
+	&:hover,&:focus{
+		outline:none;
+	}
+}
+.input-wrap{
+	margin-bottom:20px;
+}
+.input-field{
+	width:100%;
+	padding:0 20px;
+	color:#222;
+	font:18px/36px "ARIALN",sans-serif;
+	height:40px;/*IE fix*/
+	border:2px solid #acacac;
+	@include border-rad(4px);
+	background:#fff;
+    outline:none;
+}
+.inline-form{
+	@include flex();
+	margin-bottom:20px;
+	@media screen and (max-width:500px){
+		@include flex-wrap(wrap);
+		@include justify-content(flex-end);
+	}
+	.input-wrap{
+		width:100%;
+		margin-right:30px;
+		margin-bottom:0px;
+		@media screen and (max-width:500px){
+			margin-right:0;
+			margin-bottom:5px;
+		}
+	}
+}
+input[type="search"]::-webkit-search-cancel-button{
+	-webkit-appearance:none;
+}
