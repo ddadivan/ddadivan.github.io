@@ -1,0 +1,64 @@
+.main{
+	&.details .banner-wrap{
+		background-color:#e2e2e2;
+		background-image:url('../img/portfolio/banner.png');		
+		background-position:80% 0;
+	}
+	.top-block{
+		background:#fff;
+		.content{
+			justify-content:flex-end;
+		}
+		.nav{
+			position:relative;
+			&:hover .drop-down{
+				display:block;
+			}
+			a.btn-down{
+				display:block;
+				width:193px;
+				font-size:13px;
+				font-weight:700;
+				line-height:60px;
+				text-transform: uppercase;
+				text-decoration: none;
+				color:#071f08;
+				border-left:1px solid #ebebeb;
+				border-right:1px solid #ebebeb;
+				cursor:pointer;
+				span{
+					padding:0 13px 0 47px;
+				}
+			}		
+			ul.drop-down{
+				position:absolute;
+				display:none;
+				top:100%;
+				left:0;
+				right:0;
+				background:#fff;
+				border-top:1px solid #ebebeb;
+				border-bottom:1px solid #ebebeb;
+				z-index:10;
+				a{
+					display:block;
+				    color: #777;
+				    font-size:14px;
+					font-weight:700;
+					line-height:40px;
+				    text-align: center;
+				    text-decoration: none;
+				    text-transform: uppercase;
+				    border-left:1px solid #ebebeb;
+					border-right:1px solid #ebebeb;
+				    cursor: pointer;
+				    transition: .4s ease-out;
+				    &.active,
+				    &:hover{
+				    color:#000;
+				    }				    
+				}
+			}
+		}
+	}
+}

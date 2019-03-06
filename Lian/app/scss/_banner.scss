@@ -1,0 +1,42 @@
+.banner-wrap{
+	position:relative;
+	min-height:150px;
+	height:350px;
+	background-color:#f0f0f2;	
+	background-position: 100% 0;
+	background-repeat:no-repeat;
+	background-size:contain;
+	img{
+		display:block;
+		width:100%;
+	}
+	.content{
+		position:absolute;
+		top:50%;
+		left:0;
+		right:0;
+		transform:translateY(-50%);
+		.text-wrap{
+			max-width:550px;
+			text-transform:uppercase;
+			.text{
+				margin-bottom:40px;
+				padding:0 30px;
+				font-size:48px;
+				font-weight:300;
+				line-height:55px;
+				color:#fff;
+			    letter-spacing: 2px;
+			    text-align:center;				
+				background:#000;
+			}
+			.sup-text{
+				font-size:18px;
+				font-weight:300;
+				line-height:24px;
+				letter-spacing: 8px;
+				color:#000;
+			}
+		}
+	}
+}

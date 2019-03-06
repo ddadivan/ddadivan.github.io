@@ -1,0 +1,91 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    title Lian
+    link(rel='stylesheet', type='text/css', href='../css/style.css')
+    link(rel='stylesheet', type='text/css', href='../css/slick.css')
+    link(rel='stylesheet', type='text/css', href='../css/slick-theme.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+  body
+    include ../template/header.pug
+    .main.about
+      .banner-wrap
+        .content
+          .text-wrap
+            .text About The Agency
+            .sup-text
+              span Welcome to Lian
+      .info-wrap
+        .content.flex
+          .img-wrap
+            img(src='../img/about/img1.png', alt='')
+          .info-box
+            .title our story
+            p
+              | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+            p
+              | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+            .skill-wrap
+              .title Our Skill
+              .box
+                .title Photoshop
+                .line
+                  .load.one
+                    .dot
+                      .counter 90%
+              .box
+                .title Branding
+                .line
+                  .load.two
+                    .dot
+                      .counter 95%
+              .box
+                .title Photography
+                .line
+                  .load.three
+                    .dot
+                      .counter 50%
+              .box
+                .title Web Design
+                .line
+                  .load.four
+                    .dot
+                      .counter 85%
+      .team-wrap
+        .content
+          .title Awesome Team
+          .text
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+          .team-box.flex
+            .team-item
+              .img-box
+                img(src='../img/about/people1.png', alt='')
+              .name
+                | Lian Joy 
+                span CEO/Founder
+              .text-box
+                | Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci
+            .team-item
+              .img-box
+                img(src='../img/about/people2.png', alt='')
+              .name
+                | Albert Thanh 
+                span CEO/Founder
+              .text-box
+                | Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci
+            .team-item
+              .img-box
+                img(src='../img/about/people3.png', alt='')
+              .name
+                | Jenn Pereira 
+                span CEO/Founder
+              .text-box
+                | Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci
+    include ../template/footer.pug            
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='https://code.jquery.com/jquery-2.1.4.js')
+    script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
+    script(src='../js/slick.min.js')
+    script(src='../js/scripts.js')

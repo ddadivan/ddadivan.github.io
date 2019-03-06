@@ -1,0 +1,36 @@
+.works-wrap{
+	.title{
+		margin-bottom:32px;
+		font-size:30px;
+		font-weight:300;
+		line-height:32px;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing:10px;
+		color:#000;
+	}
+	.text-box{
+		max-width:555px;
+		width:48.5%;
+		margin: 0 auto;
+		font-size:14px;
+		font-weight:400;
+		line-height:30px;
+		text-align: center;
+		letter-spacing: .25px;
+		color:#777;
+	}
+	.img-list{
+		padding:54px 0 67px;
+		justify-content:space-between;
+		.item{
+			max-width:358px;
+			width:31.5%;
+		}
+		img{
+			display: block;
+			max-width:100%;
+			margin: 0 auto;
+		}
+	}
+}

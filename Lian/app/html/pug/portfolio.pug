@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    title Lian
+    link(rel='stylesheet', type='text/css', href='../css/style.css')
+    link(rel='stylesheet', type='text/css', href='../css/slick.css')
+    link(rel='stylesheet', type='text/css', href='../css/slick-theme.css')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+  body
+    include ../template/header.pug
+    .main.details
+      .banner-wrap
+        .content
+          .text-wrap
+            .text About The Agency
+            .sup-text
+              span Welcome to Lian
+      .gallery-wrap
+        .content
+          .img-menu
+            .mobile-menu
+            .title Categories
+          ul.gallery-nav
+            li
+              a.active(href='javascript:void(0)') All
+            li
+              a(href='javascript:void(0)') Logo
+            li
+              a(href='javascript:void(0)') Mobile App
+            li
+              a(href='javascript:void(0)') WordPress
+            li
+              a(href='javascript:void(0)') Web Design
+            li
+              a(href='javascript:void(0)') UI/IX
+            li
+              a(href='javascript:void(0)') Branding
+          .img-box
+            ul.item-wrap
+              li.item
+                a(href='details.html')
+                  img(src='../img/img1.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img6.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img3.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img4.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img5.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img2.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img10.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img8.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img9.png', alt='#')
+              li.item
+                a(href='details.html')
+                  img(src='../img/img7.png', alt='#')
+            .btn-wrap
+              a#loadMore.btn(href='#') Load more
+    include ../template/footer.pug
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+    script(src='https://code.jquery.com/jquery-2.1.4.js')
+    script(src='https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js')
+    script(src='../js/slick.min.js')
+    script(src='../js/scripts.js')
