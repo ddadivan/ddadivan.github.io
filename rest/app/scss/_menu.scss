@@ -1,0 +1,37 @@
+.menu-wrap{
+	padding:110px 0 117px;
+	background:#f3f4f7;
+	.title{
+		color:#0b0c0d;
+		&:after{
+			background:#c8235d;
+		}
+	}
+	.menu-box{
+		justify-content:space-between;
+		.menu{
+			max-width:460px;
+			width:38%;
+			.menu-item{
+				margin-bottom:57px; 
+			}
+			.name-price{
+				justify-content:space-between;
+			}
+			.name{
+				margin-bottom:21px;
+				font-size:16px;
+				line-height:19px;
+				text-transform: uppercase;
+				color:#1a1b1d;
+			}
+			.price{
+				color:#c8235d;
+			    padding-left: 25px;
+			}
+			.description{
+				color:#aaabad;
+			}
+		}
+	}	
+}

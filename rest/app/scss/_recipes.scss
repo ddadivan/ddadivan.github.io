@@ -1,0 +1,12 @@
+.recipes-wrap{
+	padding: 113px 0;
+	background: url('../img/bg.png') no-repeat;
+	background-size:cover;
+	.title:after{
+		background:#c8235d;
+	}
+	.info{
+		max-width: 550px;
+		margin: 0 auto;
+	}
+}

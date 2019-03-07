@@ -1,0 +1,24 @@
+.product-wrap{
+	padding:118px 0;
+	background:#962323;
+	.content{
+		justify-content:space-between;
+	}
+	.img-box{
+		max-width:450px;
+	}
+	img{
+		display:block;
+		max-width:100%;
+		margin:0 auto;
+	}
+	.text-box{
+		max-width:600px;
+		flex-direction:column;
+		justify-content:center;
+	}
+	.info{
+	    padding: 0 50px;
+	}
+
+}
