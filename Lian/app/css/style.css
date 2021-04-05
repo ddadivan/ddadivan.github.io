@@ -88,29 +88,34 @@ body {
 .mobile-menu {
   position: relative;
   display: none;
-  top: 18px;
+  align-items: center;
   width: 30px;
-  height: 2px;
-  background: #777; }
-  .mobile-menu.active {
-    background: transparent; }
-    .mobile-menu.active:before {
-      top: 0;
-      transform: rotate(45deg); }
-    .mobile-menu.active:after {
-      top: 0;
-      transform: rotate(-45deg); }
-  .mobile-menu:before, .mobile-menu:after {
+  height: 20px;
+  cursor: pointer; }
+  .mobile-menu span {
     display: block;
-    position: absolute;
-    content: "";
     width: 30px;
     height: 2px;
     background: #777; }
-  .mobile-menu:before {
-    top: -10px; }
-  .mobile-menu:after {
-    bottom: -10px; }
+    .mobile-menu span:before, .mobile-menu span:after {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: #777; }
+    .mobile-menu span:before {
+      top: 0; }
+    .mobile-menu span:after {
+      bottom: 0; }
+  .mobile-menu.active span {
+    background: transparent; }
+    .mobile-menu.active span:before {
+      top: 10px;
+      transform: rotate(45deg); }
+    .mobile-menu.active span:after {
+      top: 10px;
+      transform: rotate(-45deg); }
 
 /*mobile-menu gallery*/
 .img-menu {
@@ -203,11 +208,13 @@ body {
     margin-bottom: 20px; }
 
 .header {
+  position: relative;
   padding: 27px 0;
   background: #fff;
   box-shadow: 0px 2px 15px -2px rgba(0, 0, 0, 0.15); }
   .header .content.flex {
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .header .nav li {
     display: inline-block; }
     .header .nav li a {
@@ -322,68 +329,104 @@ body {
       top: 21px;
       transform: rotate(-45deg); }
 
-.gallery-wrap {
+.gallery {
   padding: 32px 0 73px; }
-  .gallery-wrap .gallery-nav {
+  .gallery-nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
     margin-bottom: 29px;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1; }
-    .gallery-wrap .gallery-nav li a {
+    .gallery-nav li a {
       display: inline-block;
-      padding: 0 17px;
+      padding: 5px 17px;
       color: #777;
       font-size: 14px;
       font-weight: 700;
-      line-height: 61px;
       text-decoration: none;
       text-transform: uppercase;
       cursor: pointer;
       transition: .4s ease-out; }
-      .gallery-wrap .gallery-nav li a:hover, .gallery-wrap .gallery-nav li a.active {
+      .gallery-nav li a:hover, .gallery-nav li a.active {
         color: #000; }
-  .gallery-wrap .item-wrap {
+  .gallery-wrap {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
     column-gap: 30px;
     padding-bottom: 35px; }
-    .gallery-wrap .item-wrap li {
-      width: 100%;
-      margin-bottom: 30px; }
-    .gallery-wrap .item-wrap a {
+    @media screen and (max-width: 767px) {
+      .gallery-wrap {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2; } }
+    @media screen and (max-width: 600px) {
+      .gallery-wrap {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1; } }
+  .gallery-item {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid; }
+    .gallery-item-inner {
       display: block;
       position: relative;
-      cursor: pointer; }
-      .gallery-wrap .item-wrap a:after {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-image: var(--bg); }
+      .gallery-item-inner:before, .gallery-item-inner:after {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none; }
+      .gallery-item-inner:before {
         position: absolute;
         display: block;
-        content: "";
+        content: '';
         top: 0;
-        left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
+        left: 0;
+        background: rgba(0, 0, 0, 0);
+        z-index: 5;
         visibility: hidden;
-        z-index: 5; }
-      .gallery-wrap .item-wrap a:before {
+        transition: background-color .2s linear; }
+      .gallery-item-inner:after {
         position: absolute;
         display: block;
-        content: "";
+        content: '+';
         top: 50%;
         left: 50%;
-        width: 40px;
-        height: 40px;
         transform: translate(-50%, -50%);
-        background: url("../img/cross.png") no-repeat;
+        color: rgba(255, 255, 255, 0);
+        font-size: 60px;
+        line-height: 1;
+        z-index: 10;
         visibility: hidden;
-        z-index: 6; }
-      .gallery-wrap .item-wrap a:hover:before, .gallery-wrap .item-wrap a:hover:after {
+        transition: color .2s linear; }
+      .gallery-item-inner:hover:before, .gallery-item-inner:hover:after {
         visibility: visible; }
-    .gallery-wrap .item-wrap img {
-      display: block;
-      width: 100%; }
-  .gallery-wrap .btn-wrap {
-    text-align: center; }
+      .gallery-item-inner:hover:before {
+        background-color: rgba(0, 0, 0, 0.5); }
+      .gallery-item-inner:hover:after {
+        color: white; }
+    .gallery-item--bg1, .gallery-item--bg5, .gallery-item--bg6, .gallery-item--bg10 {
+      height: 350px; }
+    .gallery-item--bg7, .gallery-item--bg9 {
+      height: 450px; }
 
 .banner-wrap {
   position: relative;
@@ -1424,7 +1467,7 @@ body {
     padding: 15px 0; }
   /*mobile-menu header*/
   .mobile-menu {
-    display: block; }
+    display: flex; }
   .header .nav {
     display: none; }
     .header .nav li {
@@ -1434,7 +1477,7 @@ body {
     .header .nav.active {
       display: block;
       position: absolute;
-      top: 10%;
+      top: 100%;
       left: 0;
       right: 0;
       padding: 20px 20px 25px;

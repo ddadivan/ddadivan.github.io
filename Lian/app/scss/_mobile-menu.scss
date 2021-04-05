@@ -2,36 +2,49 @@
 .mobile-menu{
 	position:relative;
 	display:none;
-	top:18px;
+	align-items: center;
 	width:30px;
-	height:2px;
-	background:#777;
-	&.active{
-		background:transparent;
+	height:20px;
+	cursor: pointer;
+
+	span {
+		display: block;
+		width: 30px;
+		height: 2px;
+		background:#777;
+
+		&:before,
+		&:after{
+			display:block;
+			position:absolute;
+			content:"";
+			width:30px;
+			height:2px;
+			background:#777;
+		}
 		&:before{
-			top:0;
-			transform:rotate(45deg);
+			top: 0;
 		}
 		&:after{
-			top:0;
-			transform:rotate(-45deg);
+			bottom: 0;
 		}
-	}	 	
-	&:before,
-	&:after{
-		display:block;
-		position:absolute;
-		content:"";
-		width:30px;
-		height:2px;
-		background:#777;
 	}
-	&:before{
-		top:-10px;
+	&.active{
+		span {
+			background:transparent;
+
+			&:before{
+				top:10px;
+				transform:rotate(45deg);
+			}
+			&:after{
+				top:10px;
+				transform:rotate(-45deg);
+			}
+		}
+
 	}
-	&:after{
-		bottom:-10px;
-	}	
+
 }
 
 /*mobile-menu gallery*/
